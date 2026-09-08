@@ -7,12 +7,10 @@
   <meta name="description" content="Portfolio of Kwabena Adu Darko-Asare — Senior at Cornell University studying Economics." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <div class="bg-glow" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <div class="nav-inner">
@@ -21,34 +19,43 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav-links" id="navLinks">
+        <a href="#top" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#focus">Focus</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero" id="top">
-      <p class="reveal eyebrow">Portfolio</p>
-      <h1 class="reveal hero-name">Kwabena Adu<br />Darko-Asare</h1>
-      <p class="reveal hero-tagline">
-        Senior at Cornell University studying Economics. I love building
-        projects and exploring new things in my spare time.
-      </p>
-      <div class="reveal hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="reveal eyebrow">Hello, my name is</p>
+          <h1 class="reveal hero-name">Kwabena Adu<br />Darko-Asare</h1>
+          <p class="reveal hero-tagline">I'm a Senior Economics student &amp; builder</p>
+          <div class="reveal social-row">
+            <!-- EDIT ME: replace # with your real profile URLs -->
+            <a href="#" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+            <a href="mailto:kad274@cornell.edu" aria-label="Email">@</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap reveal">
+          <!-- EDIT ME: swap this src for your real photo, e.g. assets/photo.jpg -->
+          <img class="hero-photo" src="assets/profile-placeholder.svg" alt="Kwabena Adu Darko-Asare" />
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="section-head reveal">
-        <span class="section-num">01</span>
-        <h2>About</h2>
+        <span class="section-num">01.</span>
+        <h2 data-ghost="About">About</h2>
       </div>
       <div class="about-grid">
         <p class="about-text reveal">
@@ -77,59 +84,96 @@
       </div>
     </section>
 
+    <!-- FOCUS / SERVICES -->
+    <section class="section" id="focus">
+      <div class="section-head reveal">
+        <span class="section-num">02.</span>
+        <h2 data-ghost="Focus">Focus</h2>
+        <a href="#projects" class="btn btn-outline section-cta">View All Projects</a>
+      </div>
+      <!-- EDIT ME: swap these three cards for your real focus areas / what you do -->
+      <div class="focus-grid reveal">
+        <article class="focus-card focus-card-highlight">
+          <div class="focus-icon">◆</div>
+          <h3>Building Projects</h3>
+          <p>End-to-end builds — from an idea to something real, working through design, code, and iteration.</p>
+        </article>
+        <article class="focus-card">
+          <div class="focus-icon">◇</div>
+          <h3>Economics &amp; Analysis</h3>
+          <p>Applying economic thinking and data analysis to understand problems and make better decisions.</p>
+        </article>
+        <article class="focus-card">
+          <div class="focus-icon">✦</div>
+          <h3>Exploring New Tools</h3>
+          <p>Always picking up something new — languages, frameworks, or ideas outside my comfort zone.</p>
+        </article>
+      </div>
+
+      <!-- EDIT ME: replace with real numbers once you have them -->
+      <div class="stats-bar reveal">
+        <div class="stat">
+          <span class="stat-icon">▲</span>
+          <span class="stat-value">X</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">●</span>
+          <span class="stat-value">4</span>
+          <span class="stat-label">Years at Cornell</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">■</span>
+          <span class="stat-value">1</span>
+          <span class="stat-label">Econ Degree (in progress)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon">★</span>
+          <span class="stat-value">X</span>
+          <span class="stat-label">New Things Tried</span>
+        </div>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="section-head reveal">
-        <span class="section-num">02</span>
-        <h2>Projects</h2>
+        <span class="section-num">03.</span>
+        <h2 data-ghost="Projects">Projects</h2>
+        <a href="#" class="btn btn-outline section-cta">View All Projects</a>
       </div>
-      <div class="projects-grid">
+      <div class="projects-grid reveal">
 
         <!-- EDIT ME: replace each card below with a real project — title, description, tags, and links -->
-        <article class="project-card reveal">
-          <div class="project-thumb thumb-1" aria-hidden="true"></div>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="project-thumb thumb-1">
+            <span class="project-arrow">↗</span>
+          </div>
           <div class="project-body">
             <h3>Project One</h3>
-            <p>A short description of what this project does, the problem it solves, and your role in building it.</p>
-            <ul class="tags">
-              <li>Tag</li><li>Tag</li><li>Tag</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live ↗</a>
-              <a href="#" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <p>A short description of what this project does and the problem it solves.</p>
           </div>
-        </article>
+        </a>
 
-        <article class="project-card reveal">
-          <div class="project-thumb thumb-2" aria-hidden="true"></div>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="project-thumb thumb-2">
+            <span class="project-arrow">↗</span>
+          </div>
           <div class="project-body">
             <h3>Project Two</h3>
-            <p>A short description of what this project does, the problem it solves, and your role in building it.</p>
-            <ul class="tags">
-              <li>Tag</li><li>Tag</li><li>Tag</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live ↗</a>
-              <a href="#" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <p>A short description of what this project does and the problem it solves.</p>
           </div>
-        </article>
+        </a>
 
-        <article class="project-card reveal">
-          <div class="project-thumb thumb-3" aria-hidden="true"></div>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="project-thumb thumb-3">
+            <span class="project-arrow">↗</span>
+          </div>
           <div class="project-body">
             <h3>Project Three</h3>
-            <p>A short description of what this project does, the problem it solves, and your role in building it.</p>
-            <ul class="tags">
-              <li>Tag</li><li>Tag</li><li>Tag</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live ↗</a>
-              <a href="#" target="_blank" rel="noopener">Code ↗</a>
-            </div>
+            <p>A short description of what this project does and the problem it solves.</p>
           </div>
-        </article>
+        </a>
 
       </div>
     </section>
@@ -137,8 +181,8 @@
     <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="section-head reveal">
-        <span class="section-num">03</span>
-        <h2>Skills</h2>
+        <span class="section-num">04.</span>
+        <h2 data-ghost="Skills">Skills</h2>
       </div>
       <!-- EDIT ME: replace with your actual skills/tools -->
       <div class="skills-grid reveal">
@@ -173,8 +217,8 @@
     <!-- CONTACT -->
     <section class="section section-contact" id="contact">
       <div class="section-head reveal">
-        <span class="section-num">04</span>
-        <h2>Contact</h2>
+        <span class="section-num">05.</span>
+        <h2 data-ghost="Contact">Contact</h2>
       </div>
       <div class="contact-box reveal">
         <p class="contact-lead">
