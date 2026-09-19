@@ -127,20 +127,9 @@
   box-shadow: 0 0 0 4px rgba(75, 199, 123, 0.12);
 }
 
-.case-hero-media {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-.case-hero-media img,
 .case-media-pair figure {
   border: 1px solid #393732;
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
-}
-.case-hero-media img {
-  width: 100%;
-  display: block;
-  border-radius: 22px;
 }
 
 .case-section {
@@ -385,8 +374,6 @@
   .case-lead { margin-top: 24px; }
   .case-actions { align-items: stretch; flex-direction: column; }
   .case-button { width: 100%; }
-  .case-hero-media { padding: 0 12px; }
-  .case-hero-media img { min-height: 280px; object-fit: cover; object-position: 38% center; border-radius: 16px; }
   .case-section { padding: 80px 20px; }
   .case-pillars,
   .case-flow,
