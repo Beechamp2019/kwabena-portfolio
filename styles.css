@@ -189,6 +189,8 @@ a { color: inherit; }
   display: flex;
   justify-content: flex-end;
   align-self: end;
+  background-color: var(--bg-hero);
+  isolation: isolate;
 }
 .hero-photo {
   width: 100%;
