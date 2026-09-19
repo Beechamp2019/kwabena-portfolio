@@ -195,6 +195,7 @@ a { color: inherit; }
   max-width: 400px;
   height: auto;
   display: block;
+  mix-blend-mode: multiply;
   border-radius: 12px 12px 0 0;
 }
 
