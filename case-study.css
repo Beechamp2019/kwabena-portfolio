@@ -126,7 +126,6 @@
   padding: 0 32px;
 }
 .case-hero-media img,
-.case-video-frame,
 .case-media-pair figure {
   border: 1px solid #393732;
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
@@ -199,7 +198,6 @@
   line-height: 1.65;
 }
 
-.case-walkthrough,
 .case-responsive {
   display: block;
 }
@@ -208,18 +206,6 @@
   margin-bottom: 48px;
 }
 .case-section-heading > p:last-child { margin: 22px 0 0; }
-.case-video-frame {
-  overflow: hidden;
-  border-radius: 22px;
-  background: #000;
-}
-.case-video-frame video {
-  width: 100%;
-  display: block;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
 .case-flow {
   padding: 0 32px;
   display: grid;
@@ -248,7 +234,7 @@
 
 .case-media-pair {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   align-items: end;
 }
@@ -259,8 +245,8 @@
   background: #f4f3ee;
 }
 .case-media-pair img { width: 100%; display: block; }
-.case-desktop-shot img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
-.case-mobile-shot img { aspect-ratio: 390 / 720; object-fit: cover; object-position: top; }
+.case-desktop-shot img,
+.case-services-shot img { aspect-ratio: 2940 / 1596; object-fit: cover; object-position: top; }
 .case-media-pair figcaption {
   padding: 13px 16px;
   color: #5e5a54;
@@ -323,7 +309,6 @@
   .case-tech-grid { grid-template-columns: 1fr; }
   .case-tech-grid article { min-height: 190px; }
   .case-media-pair { grid-template-columns: 1fr; }
-  .case-mobile-shot { max-width: 300px; justify-self: center; }
   .case-next { margin: 10px 20px 70px; padding: 42px 24px; }
   .case-footer { padding: 28px 20px; }
 }
