@@ -300,11 +300,21 @@ a { color: inherit; }
 .project-thumb {
   position: relative;
   height: 160px;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--accent-soft), rgba(255,255,255,0.02));
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
+.project-thumb-image { background: #f2f3ef; }
+.project-thumb-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  transition: transform 0.35s ease;
+}
+.project-card:hover .project-thumb-image img { transform: scale(1.035); }
 .thumb-2 { background: linear-gradient(135deg, rgba(120,170,255,0.14), rgba(255,255,255,0.02)); }
 .thumb-3 { background: linear-gradient(135deg, rgba(255,120,150,0.12), rgba(255,255,255,0.02)); }
 .project-arrow {
@@ -322,6 +332,15 @@ a { color: inherit; }
 }
 .project-card:hover .project-arrow { transform: scale(1.1) rotate(8deg); }
 .project-body { padding: 22px; }
+.project-kicker {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 .project-body h3 {
   font-family: var(--font-display);
   margin: 0 0 10px;
@@ -331,6 +350,20 @@ a { color: inherit; }
   color: var(--text-dim);
   font-size: 0.95rem;
   margin: 0;
+}
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+.project-tech span {
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  font-weight: 600;
 }
 
 /* SKILLS */

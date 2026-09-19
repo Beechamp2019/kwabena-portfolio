@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RookMarket Case Study — Kwabena Adu Darko-Asare</title>
+  <meta name="description" content="A case study of RookMarket, a campus-only marketplace for verified college students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260919-6" />
+  <link rel="stylesheet" href="case-study.css?v=20260919-1" />
+</head>
+<body class="case-page">
+  <header class="case-nav">
+    <a class="case-back" href="index.html#work" aria-label="Back to portfolio">← <span>KADA</span></a>
+    <a class="case-live-link" href="https://www.rookmarket.com" target="_blank" rel="noopener">Visit live site ↗</a>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="case-hero-copy">
+        <p class="case-eyebrow">Featured project · 2026</p>
+        <h1>RookMarket</h1>
+        <p class="case-lead">A campus-only marketplace where verified college students can buy, sell, and connect within their community.</p>
+        <div class="case-actions">
+          <a class="case-button case-button-primary" href="https://www.rookmarket.com" target="_blank" rel="noopener">Explore RookMarket ↗</a>
+          <a class="case-button case-button-secondary" href="#story">Read the story ↓</a>
+        </div>
+      </div>
+
+      <dl class="case-facts" aria-label="Project details">
+        <div><dt>Role</dt><dd>Product &amp; Engineering</dd></div>
+        <div><dt>Platform</dt><dd>Web, iOS &amp; Android</dd></div>
+        <div><dt>Stack</dt><dd>TypeScript, Supabase, Capacitor</dd></div>
+        <div><dt>Status</dt><dd><span class="status-dot"></span>Live</dd></div>
+      </dl>
+    </section>
+
+    <figure class="case-hero-media">
+      <img src="assets/rookmarket-home.png" alt="RookMarket desktop marketplace interface" />
+    </figure>
+
+    <section class="case-section case-intro" id="story">
+      <div>
+        <p class="case-section-label">01 · The idea</p>
+        <h2>Useful things should stay in circulation.</h2>
+      </div>
+      <div class="case-prose">
+        <p>Students often need furniture, electronics, and dorm essentials for only part of the year. When semesters end, useful items are discarded while other students are looking to buy the same things nearby.</p>
+        <p>I built RookMarket to make those exchanges simpler and more trustworthy: access is tied to a verified campus email, listings are local, and conversations stay connected to the item being sold.</p>
+      </div>
+    </section>
+
+    <section class="case-pillars" aria-label="RookMarket product principles">
+      <article>
+        <span>01</span>
+        <h3>Campus trust</h3>
+        <p>Marketplace access is limited to students with a confirmed campus email.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Local exchange</h3>
+        <p>Listings, pickup details, and conversations are designed around nearby campus transactions.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Less waste</h3>
+        <p>Move-out tools help students keep useful items in circulation instead of throwing them away.</p>
+      </article>
+    </section>
+
+    <section class="case-section case-walkthrough">
+      <div class="case-section-heading">
+        <p class="case-section-label">02 · Product walkthrough</p>
+        <h2>Designed for the whole exchange.</h2>
+        <p>From discovery to pickup, the experience keeps the important context in one place.</p>
+      </div>
+      <div class="case-video-frame">
+        <video controls muted loop playsinline preload="metadata" poster="assets/rookmarket-home.png" aria-label="Short walkthrough of the RookMarket interface">
+          <source src="assets/rookmarket-walkthrough.webm" type="video/webm" />
+          Your browser does not support embedded video.
+        </video>
+      </div>
+    </section>
+
+    <section class="case-flow" aria-label="How RookMarket works">
+      <article><span>1</span><div><h3>Verify</h3><p>Students confirm an eligible campus email before entering the live marketplace.</p></div></article>
+      <article><span>2</span><div><h3>Discover or list</h3><p>Users browse local items, filter by category and pickup area, or create their own listing.</p></div></article>
+      <article><span>3</span><div><h3>Connect safely</h3><p>Messages remain tied to a listing so offers and pickup details are easy to follow.</p></div></article>
+    </section>
+
+    <section class="case-section case-build">
+      <div>
+        <p class="case-section-label">03 · Building it</p>
+        <h2>One product across web and mobile.</h2>
+      </div>
+      <div class="case-prose">
+        <p>RookMarket uses Vite and TypeScript for the application foundation, with Supabase providing authentication, Postgres data, file storage, and row-level access controls.</p>
+        <p>The responsive web application is packaged for iOS and Android with Capacitor. This keeps the core marketplace experience in one codebase while still supporting native distribution.</p>
+      </div>
+    </section>
+
+    <section class="case-tech-grid">
+      <article><span>Frontend</span><strong>Vite + TypeScript</strong><p>A responsive interface designed for desktop and mobile use.</p></article>
+      <article><span>Backend</span><strong>Supabase</strong><p>Authentication, Postgres, storage, and protected user data.</p></article>
+      <article><span>Mobile</span><strong>Capacitor</strong><p>The same product packaged for iOS and Android.</p></article>
+      <article><span>Trust</span><strong>Moderation</strong><p>Server-side checks and marketplace rules help screen prohibited listings.</p></article>
+    </section>
+
+    <section class="case-section case-responsive">
+      <div class="case-section-heading">
+        <p class="case-section-label">04 · Responsive experience</p>
+        <h2>Built around how students actually browse.</h2>
+        <p>Desktop supports fast discovery and filtering, while the mobile layout prioritizes search, categories, and thumb-friendly navigation.</p>
+      </div>
+      <div class="case-media-pair">
+        <figure class="case-desktop-shot">
+          <img src="assets/rookmarket-home.png" alt="RookMarket desktop experience" loading="lazy" />
+          <figcaption>Desktop marketplace</figcaption>
+        </figure>
+        <figure class="case-mobile-shot">
+          <img src="assets/rookmarket-mobile.png" alt="RookMarket mobile experience" loading="lazy" />
+          <figcaption>Mobile marketplace</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-section case-lessons">
+      <div>
+        <p class="case-section-label">05 · What I learned</p>
+        <h2>A marketplace is a trust system, not just a listing grid.</h2>
+      </div>
+      <div class="case-prose">
+        <p>The hardest product decisions were not visual. They involved deciding who gets access, how users communicate, what happens when content is unsafe, and how the same rules remain understandable across web and mobile.</p>
+        <p>Building RookMarket pushed me to think beyond individual features and design the systems around them: verification, moderation, privacy, responsive interaction, and a codebase that can evolve without interrupting the live product.</p>
+      </div>
+    </section>
+
+    <section class="case-next">
+      <p>See the product in action</p>
+      <h2>Explore RookMarket live.</h2>
+      <div class="case-actions">
+        <a class="case-button case-button-primary" href="https://www.rookmarket.com" target="_blank" rel="noopener">Visit rookmarket.com ↗</a>
+        <a class="case-button case-button-secondary" href="index.html#work">Back to portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <span>Kwabena Adu Darko-Asare</span>
+    <span>&copy; <span id="year"></span></span>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
