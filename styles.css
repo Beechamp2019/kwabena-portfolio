@@ -193,7 +193,9 @@ a { color: inherit; }
 .hero-photo {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 540px;
+  object-fit: cover;
+  object-position: center 42%;
   display: block;
   border-radius: 12px 12px 0 0;
 }
@@ -500,7 +502,7 @@ a { color: inherit; }
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-photo-wrap { justify-content: center; order: -1; }
-  .hero-photo { max-width: 260px; }
+  .hero-photo { max-width: 260px; height: 390px; }
   .hero-text { padding-bottom: 40px; text-align: center; }
   .social-row { justify-content: center; }
   .section-head h2[data-ghost]::before { display: none; }
