@@ -141,17 +141,18 @@
 }
 .case-intro {
   position: relative;
-}
-.case-intro::before {
-  position: absolute;
-  inset: 42px 0;
-  z-index: -1;
   border-radius: 36px;
   background:
-    radial-gradient(circle at 12% 42%, rgba(103, 212, 156, 0.09), transparent 34%),
-    radial-gradient(circle at 88% 25%, rgba(255, 90, 73, 0.07), transparent 32%);
-  content: "";
-  pointer-events: none;
+    radial-gradient(circle at 10% 40%, rgba(103, 212, 156, 0.25), transparent 34%),
+    radial-gradient(circle at 90% 24%, rgba(255, 90, 73, 0.18), transparent 32%),
+    #fbfaf7;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+}
+.case-intro h2 { color: #171613; }
+.case-intro .case-prose p { color: #57534c; }
+.case-intro .case-highlight {
+  color: #218f63;
+  text-shadow: none;
 }
 .case-section h2,
 .case-next h2 {
@@ -202,6 +203,10 @@
   position: relative;
   overflow: hidden;
   border-top-width: 2px;
+  border-right-color: rgba(36, 32, 27, 0.12);
+  border-bottom-color: rgba(36, 32, 27, 0.12);
+  border-left-color: rgba(36, 32, 27, 0.12);
+  color: #171613;
 }
 .case-pillars article::after {
   position: absolute;
@@ -228,19 +233,19 @@
 }
 .case-pillars article:nth-child(1) {
   border-top-color: var(--case-green);
-  background: linear-gradient(180deg, rgba(103, 212, 156, 0.1), var(--bg-elevated) 48%);
+  background: linear-gradient(180deg, rgba(103, 212, 156, 0.28), #fbfaf7 58%);
 }
 .case-pillars article:nth-child(1)::after,
 .case-pillars article:nth-child(1) > span { background: var(--case-green); }
 .case-pillars article:nth-child(2) {
   border-top-color: var(--case-coral);
-  background: linear-gradient(180deg, rgba(255, 90, 73, 0.1), var(--bg-elevated) 48%);
+  background: linear-gradient(180deg, rgba(255, 90, 73, 0.24), #fbfaf7 58%);
 }
 .case-pillars article:nth-child(2)::after,
 .case-pillars article:nth-child(2) > span { background: var(--case-coral); }
 .case-pillars article:nth-child(3) {
   border-top-color: var(--case-amber);
-  background: linear-gradient(180deg, rgba(244, 184, 95, 0.1), var(--bg-elevated) 48%);
+  background: linear-gradient(180deg, rgba(244, 184, 95, 0.3), #fbfaf7 58%);
 }
 .case-pillars article:nth-child(3)::after,
 .case-pillars article:nth-child(3) > span { background: var(--case-amber); }
@@ -258,6 +263,7 @@
   font-size: 0.9rem;
   line-height: 1.65;
 }
+.case-pillars p { color: #625d55; }
 
 .case-responsive {
   display: block;
