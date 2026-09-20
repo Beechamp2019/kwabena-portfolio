@@ -57,6 +57,13 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
 // Work section tabs with a single sliding active indicator.
 const tabBar = document.querySelector(".tab-bar");
 const tabButtons = document.querySelectorAll(".tab-btn");
+const workSectionNumber = document.querySelector("#work .section-num");
+const workSectionTitle = document.querySelector("#work .section-head h2");
+const workHeadings = {
+  projects: { number: "01.", title: "Projects" },
+  internships: { number: "02.", title: "Internships" },
+  research: { number: "03.", title: "Research Papers" }
+};
 let tabIndicator;
 
 const syncTabIndicator = () => {
@@ -80,6 +87,7 @@ if (tabBar) {
 tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const target = button.dataset.tab;
+    const heading = workHeadings[target];
 
     tabButtons.forEach((candidate) => {
       candidate.classList.toggle("active", candidate === button);
@@ -91,6 +99,12 @@ tabButtons.forEach((button) => {
       panel.hidden = !isActive;
       panel.classList.toggle("active", isActive);
     });
+
+    if (heading && workSectionNumber && workSectionTitle) {
+      workSectionNumber.textContent = heading.number;
+      workSectionTitle.textContent = heading.title;
+      workSectionTitle.dataset.ghost = heading.title;
+    }
 
     syncTabIndicator();
   });
