@@ -459,10 +459,6 @@
     #fbfaf7;
 }
 .vibez-page .case-intro .case-highlight { color: #6848d0; }
-.vibez-page .status-dot-purple {
-  background: #987cff;
-  box-shadow: 0 0 0 4px rgba(152, 124, 255, 0.14);
-}
 .vibez-page .case-pillars article:nth-child(1):hover { box-shadow: 0 22px 54px rgba(101, 185, 215, 0.2); }
 .vibez-page .case-pillars article:nth-child(2):hover { box-shadow: 0 22px 54px rgba(143, 114, 244, 0.2); }
 .vibez-page .case-pillars article:nth-child(3):hover { box-shadow: 0 22px 54px rgba(210, 123, 199, 0.2); }
