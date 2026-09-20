@@ -164,6 +164,12 @@
   gap: 100px;
   align-items: start;
 }
+.case-idea-heading {
+  max-width: 1120px;
+  margin: 90px auto 24px;
+  padding: 0 32px;
+}
+.case-idea-heading .case-section-label { margin: 0; }
 .case-intro {
   --spot-x: 10%;
   --spot-y: 40%;
@@ -186,6 +192,7 @@
   text-shadow: none;
 }
 .rookmarket-page .case-intro .case-highlight { color: #d64032; }
+.rookmarket-page .case-intro { padding-top: 100px; padding-bottom: 100px; }
 .case-section h2,
 .case-next h2 {
   margin: 0;
@@ -216,6 +223,7 @@
 }
 .case-pillars { margin-top: 72px; }
 .rookmarket-page .case-pillars { padding-left: 0; padding-right: 0; }
+.rookmarket-page .case-pillars h3 { margin-top: 72px; }
 .case-pillars article,
 .case-tech-grid article {
   min-height: 240px;
@@ -337,6 +345,27 @@
 .case-flow article + article { border-left: 1px solid var(--border); }
 .case-flow h3 { margin: 0 0 8px; font-size: 1rem; }
 .case-flow p { margin: 0; color: var(--text-dim); font-size: 0.86rem; line-height: 1.55; }
+.rookmarket-page .case-flow { padding-left: 0; padding-right: 0; }
+.rookmarket-page .case-flow article {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.case-flow-number {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #11110f;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+.rookmarket-page .case-flow article:nth-child(1) .case-flow-number { background: var(--case-coral); }
+.rookmarket-page .case-flow article:nth-child(2) .case-flow-number { background: var(--case-green); }
+.rookmarket-page .case-flow article:nth-child(3) .case-flow-number { background: var(--case-amber); }
 .rookmarket-page .case-flow article:nth-child(1) {
   border-top-color: rgba(255, 90, 73, 0.62);
   background: linear-gradient(180deg, rgba(255, 90, 73, 0.12), rgba(255, 90, 73, 0.025));
@@ -533,10 +562,12 @@
   .case-actions { align-items: stretch; flex-direction: column; }
   .case-button { width: 100%; }
   .case-section { padding: 80px 20px; }
+  .case-idea-heading { margin-top: 70px; padding-left: 20px; padding-right: 20px; }
   .case-pillars,
   .case-flow,
   .case-tech-grid { padding-left: 20px; padding-right: 20px; }
   .rookmarket-page .case-pillars { padding-left: 20px; padding-right: 20px; }
+  .rookmarket-page .case-flow { padding-left: 20px; padding-right: 20px; }
   .case-tech-grid { grid-template-columns: 1fr; }
   .case-tech-grid article { min-height: 190px; }
   .case-media-pair { grid-template-columns: 1fr; }
