@@ -112,7 +112,7 @@ tabButtons.forEach((button) => {
 
 // Let the RookMarket idea gradients respond subtly to the pointer.
 const ideaPanel = document.querySelector(".case-intro");
-if (ideaPanel && !prefersReducedMotion) {
+if (ideaPanel && !document.body.classList.contains("rookmarket-page") && !prefersReducedMotion) {
   let frame;
   const updateSpotlight = (event) => {
     const rect = ideaPanel.getBoundingClientRect();
