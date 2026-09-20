@@ -192,7 +192,15 @@
   text-shadow: none;
 }
 .rookmarket-page .case-intro .case-highlight { color: #d64032; }
-.rookmarket-page .case-intro { padding-top: 100px; padding-bottom: 100px; }
+.rookmarket-page .case-intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background:
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(103, 212, 156, 0.25), transparent 34%),
+    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(255, 90, 73, 0.24), transparent 36%),
+    linear-gradient(105deg, #f5fbf7 0%, #fbf8f3 44%, #76504c 74%, #281d1c 100%);
+}
+.rookmarket-page .case-intro .case-prose p { color: #f2eae5; }
 .case-section h2,
 .case-next h2 {
   margin: 0;
@@ -539,6 +547,12 @@
 @media (max-width: 900px) {
   .case-hero { grid-template-columns: 1fr; gap: 48px; padding-top: 64px; }
   .case-section { grid-template-columns: 1fr; gap: 38px; padding-top: 90px; padding-bottom: 90px; }
+  .rookmarket-page .case-intro {
+    background:
+      radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(103, 212, 156, 0.22), transparent 34%),
+      radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(255, 90, 73, 0.16), transparent 36%),
+      linear-gradient(180deg, #f5fbf7 0%, #fbf8f3 28%, #5f403d 37%, #281d1c 100%);
+  }
   .case-pillars { grid-template-columns: 1fr; }
   .case-pillars { margin-top: 48px; }
   .case-pillars article { min-height: 190px; }
