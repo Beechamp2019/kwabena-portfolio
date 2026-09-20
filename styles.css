@@ -364,6 +364,11 @@ a { color: inherit; }
   transform: scale(1.08);
 }
 .project-card:hover .project-thumb-hustle img { transform: scale(1.12); }
+.project-thumb-vibez img {
+  object-position: center 44%;
+  transform: scale(1.08);
+}
+.project-card:hover .project-thumb-vibez img { transform: scale(1.12); }
 .thumb-2 { background: linear-gradient(135deg, rgba(120,170,255,0.14), rgba(255,255,255,0.02)); }
 .thumb-3 { background: linear-gradient(135deg, rgba(255,120,150,0.12), rgba(255,255,255,0.02)); }
 .project-arrow {

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibez Case Study — Kwabena Adu Darko-Asare</title>
+  <meta name="description" content="A case study of Vibez, a verified campus community platform for conversation, communities, messaging, and games." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260919-13" />
+  <link rel="stylesheet" href="case-study.css?v=20260919-10" />
+</head>
+<body class="case-page vibez-page">
+  <header class="case-nav">
+    <a class="case-back" href="index.html#work" aria-label="Back to portfolio">← <span>KADA</span></a>
+    <a class="case-live-link" href="#experience">Explore the product ↓</a>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="case-hero-copy">
+        <p class="case-eyebrow">Featured project · 2026</p>
+        <h1>Vibez</h1>
+        <p class="case-lead">A verified campus community where students can share what is happening, find their people, talk privately, and take a break together.</p>
+        <div class="case-actions">
+          <a class="case-button case-button-primary" href="#experience">See the experience ↓</a>
+          <a class="case-button case-button-secondary" href="#story">Read the story ↓</a>
+        </div>
+      </div>
+
+      <dl class="case-facts" aria-label="Project details">
+        <div><dt>Role</dt><dd>Product &amp; Engineering</dd></div>
+        <div><dt>Audience</dt><dd>University students</dd></div>
+        <div><dt>Platform</dt><dd>Web, iOS &amp; Android</dd></div>
+        <div><dt>Stack</dt><dd>TypeScript, Supabase, Capacitor</dd></div>
+        <div><dt>Status</dt><dd><span class="status-dot status-dot-purple"></span>In development</dd></div>
+      </dl>
+    </section>
+
+    <section class="case-section case-intro" id="story">
+      <div>
+        <p class="case-section-label">01 · The idea</p>
+        <h2>Campus feels smaller when everyone can <span class="case-highlight">find their people.</span></h2>
+      </div>
+      <div class="case-prose">
+        <p>University life is full of conversations, interests, opportunities, and shared moments, but they are often scattered across group chats and platforms that were not designed around a campus.</p>
+        <p>I built Vibez as one student-centered space for campus life. Verified members can move between the wider feed, focused communities, private conversations, and casual games without losing the context of who the product is for.</p>
+      </div>
+    </section>
+
+    <section class="case-pillars" aria-label="Vibez product principles">
+      <article>
+        <span>01</span>
+        <h3>Campus identity</h3>
+        <p>Verified university email access keeps every community grounded in a real campus.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Space to belong</h3>
+        <p>Communities organize confessions, academics, events, opportunities, food, and student exchange.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Built-in play</h3>
+        <p>Quick games and study tools give students reasons to participate beyond the feed.</p>
+      </article>
+    </section>
+
+    <section class="case-flow" aria-label="How Vibez works">
+      <article><div><h3>Verify</h3><p>Students confirm an eligible university email before entering a campus community.</p></div></article>
+      <article><div><h3>Join in</h3><p>Browse the campus feed, join interest-based spaces, post, vote, or start a conversation.</p></div></article>
+      <article><div><h3>Stay connected</h3><p>Private chat, notifications, saves, communities, and games keep campus life together.</p></div></article>
+    </section>
+
+    <section class="case-section case-responsive" id="experience">
+      <div class="case-section-heading">
+        <p class="case-section-label">02 · Product experience</p>
+        <h2>One campus, with room for every side of student life.</h2>
+        <p>Vibez combines broad campus discovery with smaller communities and mobile-first interactions, so students can choose how public, focused, or playful they want each visit to be.</p>
+      </div>
+      <div class="case-vibez-media">
+        <figure class="case-vibez-desktop">
+          <img src="assets/vibez-communities-dark.png" alt="Vibez campus communities screen in dark mode" loading="lazy" />
+          <figcaption>Communities for the many sides of campus life</figcaption>
+        </figure>
+        <figure class="case-vibez-phone">
+          <img src="assets/vibez-mobile-home.jpg" alt="Vibez mobile campus feed" loading="lazy" />
+          <figcaption>A mobile-first campus feed</figcaption>
+        </figure>
+        <figure class="case-vibez-phone">
+          <img src="assets/vibez-mobile-games.jpg" alt="Vibez mobile games experience" loading="lazy" />
+          <figcaption>Quick games built into the community</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-section case-build">
+      <div>
+        <p class="case-section-label">03 · Building it</p>
+        <h2>A social product with campus boundaries built into the system.</h2>
+      </div>
+      <div class="case-prose">
+        <p>Vibez uses Vite and TypeScript for a responsive web application, with Capacitor packaging the same product for iOS and Android. The interface adapts from a desktop sidebar to a five-tab mobile navigation designed around everyday use.</p>
+        <p>Supabase supports verified email authentication, campus-scoped Postgres data, private messaging, realtime activity, storage, and Edge Functions. Server-side authorization keeps communities separated while moderation, blocking, reporting, and account controls support safer participation.</p>
+      </div>
+    </section>
+
+    <section class="case-tech-grid" aria-label="Vibez technology and product systems">
+      <article><span>Frontend</span><strong>Vite + TypeScript</strong><p>A responsive interface spanning feeds, communities, chat, games, and profiles.</p></article>
+      <article><span>Backend</span><strong>Supabase</strong><p>Verified authentication, campus-scoped Postgres data, storage, realtime, and Edge Functions.</p></article>
+      <article><span>Mobile</span><strong>Capacitor</strong><p>A shared web product packaged for iOS and Android with native push notifications.</p></article>
+      <article><span>Trust</span><strong>Safety systems</strong><p>Moderation, reporting, blocking, privacy controls, and complete account deletion.</p></article>
+    </section>
+
+    <section class="case-section case-lessons">
+      <div>
+        <p class="case-section-label">04 · What I learned</p>
+        <h2>Community products need both freedom and clear boundaries.</h2>
+      </div>
+      <div class="case-prose">
+        <p>Designing Vibez meant balancing open expression with campus identity, privacy, and safety. Anonymous participation can make students more comfortable speaking, but the product still needs strong reporting, blocking, moderation, and access rules underneath it.</p>
+        <p>The project also pushed me to connect many interaction models—feeds, polls, photos, messaging, community membership, study tools, multiplayer games, notifications, and marketplace features—without making the experience feel like a collection of unrelated apps.</p>
+      </div>
+    </section>
+
+    <section class="case-next">
+      <p>Continue exploring</p>
+      <h2>See the rest of my work.</h2>
+      <div class="case-actions">
+        <a class="case-button case-button-primary" href="index.html#work">Back to projects</a>
+        <a class="case-button case-button-secondary" href="rookmarket.html">View RookMarket ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <span>Kwabena Adu Darko-Asare</span>
+    <span>&copy; <span id="year"></span></span>
+  </footer>
+  <script src="script.js?v=20260919-2"></script>
+</body>
+</html>
