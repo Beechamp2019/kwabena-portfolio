@@ -170,13 +170,6 @@
   padding: 0 32px;
 }
 .case-idea-heading .case-section-label { margin: 0; }
-.case-idea-zone {
-  margin-top: 90px;
-  padding: 72px 0 92px;
-  color: #171613;
-  background: #fff;
-}
-.case-idea-zone .case-idea-heading { margin-top: 0; }
 .case-intro {
   --spot-x: 10%;
   --spot-y: 40%;
@@ -200,14 +193,22 @@
 }
 .rookmarket-page .case-intro .case-highlight { color: #d64032; }
 .rookmarket-page .case-intro {
-  padding-top: 52px;
-  padding-bottom: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
 }
-.rookmarket-page .case-intro:hover { box-shadow: none; }
+.rookmarket-page .case-intro:hover { box-shadow: 0 38px 92px rgba(0, 0, 0, 0.24); }
 .rookmarket-page .case-intro .case-prose p { color: #57534c; }
+.rookmarket-page .case-accent-text {
+  color: #ff725f;
+  font-weight: 650;
+}
+.rookmarket-page .case-intro .case-accent-text { color: #d64032; }
+.rookmarket-page .case-pillars article:nth-child(1) .case-accent-text { color: #168357; }
+.rookmarket-page .case-pillars article:nth-child(2) .case-accent-text { color: #d64032; }
+.rookmarket-page .case-pillars article:nth-child(3) .case-accent-text { color: #a66a12; }
 .case-section h2,
 .case-next h2 {
   margin: 0;
@@ -574,9 +575,7 @@
   .case-button { width: 100%; }
   .case-section { padding: 80px 20px; }
   .case-idea-heading { margin-top: 70px; padding-left: 20px; padding-right: 20px; }
-  .case-idea-zone { margin-top: 70px; padding-top: 58px; padding-bottom: 74px; }
-  .case-idea-zone .case-idea-heading { margin-top: 0; }
-  .rookmarket-page .case-intro { padding-top: 38px; padding-bottom: 0; }
+  .rookmarket-page .case-intro { padding-top: 80px; padding-bottom: 80px; }
   .case-pillars,
   .case-flow,
   .case-tech-grid { padding-left: 20px; padding-right: 20px; }

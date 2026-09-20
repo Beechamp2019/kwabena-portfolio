@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260919-14" />
-  <link rel="stylesheet" href="case-study.css?v=20260920-2" />
+  <link rel="stylesheet" href="case-study.css?v=20260920-3" />
 </head>
 <body class="case-page rookmarket-page">
   <header class="case-nav">
@@ -22,7 +22,7 @@
       <div class="case-hero-copy">
         <p class="case-eyebrow">Featured project · 2026</p>
         <h1>RookMarket</h1>
-        <p class="case-lead">A campus-only marketplace where verified college students can buy, sell, and connect within their community.</p>
+        <p class="case-lead">A campus-only marketplace where <span class="case-accent-text">verified college students</span> can buy, sell, and connect within their community.</p>
         <div class="case-actions">
           <a class="case-button case-button-primary" href="https://www.rookmarket.com" target="_blank" rel="noopener">Explore RookMarket ↗</a>
           <a class="case-button case-button-secondary" href="#story">Read the story ↓</a>
@@ -37,34 +37,32 @@
       </dl>
     </section>
 
-    <div class="case-idea-zone">
-      <div class="case-idea-heading" id="story">
-        <p class="case-section-label reveal">01 · The idea</p>
-      </div>
-
-      <section class="case-section case-intro">
-        <div>
-          <h2>Useful things should <span class="case-highlight">stay in circulation.</span></h2>
-        </div>
-        <div class="case-prose">
-          <p>Students often need furniture, electronics, and dorm essentials for only part of the year. When semesters end, useful items are discarded while other students are looking to buy the same things nearby.</p>
-          <p>I built RookMarket to make those exchanges simpler and more trustworthy: access is tied to a verified campus email, listings are local, and conversations stay connected to the item being sold.</p>
-        </div>
-      </section>
+    <div class="case-idea-heading" id="story">
+      <p class="case-section-label reveal">01 · The idea</p>
     </div>
+
+    <section class="case-section case-intro">
+      <div>
+        <h2>Useful things should <span class="case-highlight">stay in circulation.</span></h2>
+      </div>
+      <div class="case-prose">
+        <p>Students often need furniture, electronics, and dorm essentials for only part of the year. When semesters end, <span class="case-accent-text">useful items are discarded</span> while other students are looking to buy the same things nearby.</p>
+        <p>I built RookMarket to make those exchanges <span class="case-accent-text">simpler and more trustworthy</span>: access is tied to a verified campus email, listings are local, and conversations stay connected to the item being sold.</p>
+      </div>
+    </section>
 
     <section class="case-pillars" aria-label="RookMarket product principles">
       <article>
         <h3>Campus trust</h3>
-        <p>Marketplace access is limited to students with a confirmed campus email.</p>
+        <p>Marketplace access is limited to students with a <span class="case-accent-text">confirmed campus email.</span></p>
       </article>
       <article>
         <h3>Local exchange</h3>
-        <p>Listings, pickup details, and conversations are designed around nearby campus transactions.</p>
+        <p>Listings, pickup details, and conversations are designed around <span class="case-accent-text">nearby campus transactions.</span></p>
       </article>
       <article>
         <h3>Less waste</h3>
-        <p>Move-out tools help students keep useful items in circulation instead of throwing them away.</p>
+        <p>Move-out tools help students keep useful items <span class="case-accent-text">in circulation</span> instead of throwing them away.</p>
       </article>
     </section>
 
@@ -77,8 +75,8 @@
     <section class="case-section case-responsive">
       <div class="case-section-heading">
         <p class="case-section-label">02 · Product experience</p>
-        <h2>More than a listing marketplace.</h2>
-        <p>Students can discover nearby items and also find verified peers offering tutoring, design, photography, moving help, repairs, and more.</p>
+        <h2>More than a <span class="case-accent-text">listing marketplace.</span></h2>
+        <p>Students can discover nearby items and also find <span class="case-accent-text">verified peers</span> offering tutoring, design, photography, moving help, repairs, and more.</p>
       </div>
       <div class="case-media-pair">
         <figure class="case-desktop-shot">
@@ -95,11 +93,11 @@
     <section class="case-section case-build">
       <div>
         <p class="case-section-label">03 · Building it</p>
-        <h2>One product across web and mobile.</h2>
+        <h2>One product across <span class="case-accent-text">web and mobile.</span></h2>
       </div>
       <div class="case-prose">
         <p>RookMarket uses Vite and TypeScript for the application foundation, with Supabase providing authentication, Postgres data, file storage, and row-level access controls.</p>
-        <p>The responsive web application is packaged for iOS and Android with Capacitor. This keeps the core marketplace experience in one codebase while still supporting native distribution.</p>
+        <p>The responsive web application is packaged for iOS and Android with Capacitor. This keeps the core marketplace experience in <span class="case-accent-text">one codebase</span> while still supporting native distribution.</p>
       </div>
     </section>
 
@@ -113,11 +111,11 @@
     <section class="case-section case-lessons">
       <div>
         <p class="case-section-label">04 · What I learned</p>
-        <h2>A marketplace is a trust system, not just a listing grid.</h2>
+        <h2>A marketplace is a <span class="case-accent-text">trust system</span>, not just a listing grid.</h2>
       </div>
       <div class="case-prose">
         <p>The hardest product decisions were not visual. They involved deciding who gets access, how users communicate, what happens when content is unsafe, and how the same rules remain understandable across web and mobile.</p>
-        <p>Building RookMarket pushed me to think beyond individual features and design the systems around them: verification, moderation, privacy, responsive interaction, and a codebase that can evolve without interrupting the live product.</p>
+        <p>Building RookMarket pushed me to think beyond individual features and design the systems around them: <span class="case-accent-text">verification, moderation, and privacy</span>, responsive interaction, and a codebase that can evolve without interrupting the live product.</p>
       </div>
     </section>
 
