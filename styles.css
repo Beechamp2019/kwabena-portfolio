@@ -96,6 +96,7 @@ a { color: inherit; }
 .hero {
   background: var(--bg-hero);
   padding-top: 84px;
+  overflow: hidden;
 }
 .hero-inner {
   max-width: 1240px;
@@ -133,6 +134,7 @@ a { color: inherit; }
 }
 .hero-photo-wrap {
   position: relative;
+  left: clamp(28px, 5vw, 72px);
   display: flex;
   justify-content: flex-end;
   align-self: end;
@@ -519,7 +521,7 @@ a { color: inherit; }
 /* RESPONSIVE */
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-photo-wrap { justify-content: center; order: -1; }
+  .hero-photo-wrap { left: 36px; justify-content: center; order: -1; }
   .hero-photo { max-width: 300px; }
   .hero-text { padding-bottom: 40px; text-align: center; }
   .hero-description { max-width: 610px; margin: 0 auto; text-align: left; }
