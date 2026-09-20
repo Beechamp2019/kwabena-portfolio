@@ -185,6 +185,7 @@
   color: #218f63;
   text-shadow: none;
 }
+.rookmarket-page .case-intro .case-highlight { color: #d64032; }
 .case-section h2,
 .case-next h2 {
   margin: 0;
@@ -214,6 +215,7 @@
   gap: 14px;
 }
 .case-pillars { margin-top: 72px; }
+.rookmarket-page .case-pillars { padding-left: 0; padding-right: 0; }
 .case-pillars article,
 .case-tech-grid article {
   min-height: 240px;
@@ -335,6 +337,21 @@
 .case-flow article + article { border-left: 1px solid var(--border); }
 .case-flow h3 { margin: 0 0 8px; font-size: 1rem; }
 .case-flow p { margin: 0; color: var(--text-dim); font-size: 0.86rem; line-height: 1.55; }
+.rookmarket-page .case-flow article:nth-child(1) {
+  border-top-color: rgba(255, 90, 73, 0.62);
+  background: linear-gradient(180deg, rgba(255, 90, 73, 0.12), rgba(255, 90, 73, 0.025));
+}
+.rookmarket-page .case-flow article:nth-child(2) {
+  border-top-color: rgba(103, 212, 156, 0.5);
+  background: linear-gradient(180deg, rgba(103, 212, 156, 0.085), rgba(103, 212, 156, 0.018));
+}
+.rookmarket-page .case-flow article:nth-child(3) {
+  border-top-color: rgba(244, 184, 95, 0.5);
+  background: linear-gradient(180deg, rgba(244, 184, 95, 0.085), rgba(244, 184, 95, 0.018));
+}
+.rookmarket-page .case-flow article:nth-child(1) h3 { color: #ff8679; }
+.rookmarket-page .case-flow article:nth-child(2) h3 { color: #80dbaa; }
+.rookmarket-page .case-flow article:nth-child(3) h3 { color: #f4c475; }
 
 .case-build { padding-bottom: 70px; }
 .case-tech-grid { grid-template-columns: repeat(4, 1fr); }
@@ -519,6 +536,7 @@
   .case-pillars,
   .case-flow,
   .case-tech-grid { padding-left: 20px; padding-right: 20px; }
+  .rookmarket-page .case-pillars { padding-left: 20px; padding-right: 20px; }
   .case-tech-grid { grid-template-columns: 1fr; }
   .case-tech-grid article { min-height: 190px; }
   .case-media-pair { grid-template-columns: 1fr; }
