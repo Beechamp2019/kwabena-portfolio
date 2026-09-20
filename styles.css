@@ -134,7 +134,7 @@ a { color: inherit; }
 }
 .hero-photo-wrap {
   position: relative;
-  left: clamp(28px, 5vw, 72px);
+  left: 156px;
   display: flex;
   justify-content: flex-end;
   align-self: end;
@@ -531,7 +531,7 @@ a { color: inherit; }
 /* RESPONSIVE */
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-photo-wrap { left: 36px; justify-content: center; order: -1; }
+  .hero-photo-wrap { left: 86px; justify-content: flex-end; order: -1; }
   .hero-photo { max-width: 300px; }
   .hero-text { padding-bottom: 40px; text-align: center; }
   .hero-description { max-width: 610px; margin: 0 auto; text-align: left; }
@@ -544,6 +544,7 @@ a { color: inherit; }
   .nav-social a { width: 32px; height: 32px; font-size: 0.66rem; }
   .section { padding: 70px 24px; }
   .hero-inner { padding: 40px 24px 0; }
+  .hero-photo-wrap { left: 98px; }
   .contact-box { padding: 36px 24px; }
   .section-cta { margin-left: 0; }
 }
