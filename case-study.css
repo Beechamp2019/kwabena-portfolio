@@ -11,6 +11,13 @@
   background: #11110f;
   overflow-x: hidden;
 }
+.hustle-page {
+  --accent: #d7a915;
+  --accent-soft: rgba(215, 169, 21, 0.16);
+  --case-coral: #e1b31b;
+  --case-green: #72c694;
+  --case-amber: #f1c84a;
+}
 
 .case-nav {
   position: relative;
@@ -369,6 +376,27 @@
   background: #f4f3ee;
   font-size: 0.76rem;
   font-weight: 700;
+}
+.case-storefront-shot img,
+.case-temporary-shot img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+}
+
+.hustle-page .case-intro {
+  background:
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(241, 200, 74, 0.34), transparent 35%),
+    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(114, 198, 148, 0.2), transparent 34%),
+    #fbfaf7;
+}
+.hustle-page .case-intro .case-highlight { color: #9a7200; }
+.hustle-page .case-button-primary { color: #15150f; }
+.hustle-page .case-next { color: #15150f; }
+.hustle-page .case-next .case-button-primary { background: #15150f; color: #fff; }
+.hustle-page .case-next .case-button-secondary {
+  border-color: rgba(21, 21, 15, 0.35);
+  color: #15150f;
 }
 
 .case-lessons { border-top: 1px solid var(--border); }
