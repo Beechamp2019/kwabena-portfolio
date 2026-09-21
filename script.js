@@ -12,6 +12,30 @@ if (nav) {
   window.addEventListener("scroll", onScroll, { passive: true });
 }
 
+// Give the hero portrait a restrained pointer-following parallax after its entrance settles.
+const heroPhotoWrap = document.querySelector(".hero-photo-wrap");
+const heroPhoto = document.querySelector(".hero-photo");
+if (heroPhotoWrap && heroPhoto && !prefersReducedMotion) {
+  let portraitFrame;
+  const updatePortrait = (event) => {
+    const rect = heroPhotoWrap.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
+    const y = ((event.clientY - rect.top) / rect.height - 0.5) * 6;
+    cancelAnimationFrame(portraitFrame);
+    portraitFrame = requestAnimationFrame(() => {
+      heroPhoto.style.setProperty("--portrait-x", `${x.toFixed(2)}px`);
+      heroPhoto.style.setProperty("--portrait-y", `${y.toFixed(2)}px`);
+    });
+  };
+
+  heroPhotoWrap.addEventListener("pointermove", updatePortrait);
+  heroPhotoWrap.addEventListener("pointerleave", () => {
+    cancelAnimationFrame(portraitFrame);
+    heroPhoto.style.removeProperty("--portrait-x");
+    heroPhoto.style.removeProperty("--portrait-y");
+  });
+}
+
 // Add staggered reveal timing to related content groups.
 const staggerGroups = [
   ".hero .reveal",

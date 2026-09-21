@@ -722,15 +722,16 @@
   grid-template-rows: auto auto;
   column-gap: 15px;
   align-items: center;
-  color: #fff;
-  background: var(--accent);
-  box-shadow: 0 12px 28px var(--accent-soft);
+  color: var(--accent);
+  background: transparent;
+  box-shadow: none;
   text-decoration: none;
   transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
 }
 .case-project-nav span {
   grid-column: 1;
-  color: rgba(255, 255, 255, 0.68);
+  color: currentColor;
+  opacity: 0.68;
   font-size: 0.58rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -752,13 +753,11 @@
   transition: transform 0.25s ease;
 }
 .case-project-nav a:hover {
-  border-color: rgba(255, 255, 255, 0.38);
-  background: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
   transform: translateY(-2px);
 }
 .case-project-nav a:hover b { transform: translateX(4px); }
-.hustle-page .case-project-nav a { color: #15150f; }
-.hustle-page .case-project-nav span { color: rgba(21, 21, 15, 0.65); }
 .case-footer {
   padding: 32px;
   border-top: 1px solid var(--border);
