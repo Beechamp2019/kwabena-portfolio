@@ -207,9 +207,10 @@ a { color: inherit; }
   pointer-events: none;
 }
 #work .section-head h2 {
-  font-family: "Syne", var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.035em;
+  font-family: "Bebas Neue", var(--font-display);
+  font-size: 2.65rem;
+  font-weight: 400;
+  letter-spacing: 0.045em;
 }
 .section-cta {
   margin-left: auto;

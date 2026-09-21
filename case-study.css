@@ -1,4 +1,5 @@
 .case-page {
+  --intro-accent-rgb: 255, 90, 73;
   --case-red: #bd1d1d;
   --case-paper: #efeee9;
   --case-coral: #ff5a49;
@@ -12,6 +13,7 @@
   overflow-x: hidden;
 }
 .hustle-page {
+  --intro-accent-rgb: 215, 169, 21;
   --accent: #d7a915;
   --accent-soft: rgba(215, 169, 21, 0.16);
   --case-coral: #e1b31b;
@@ -19,6 +21,7 @@
   --case-amber: #f1c84a;
 }
 .vibez-page {
+  --intro-accent-rgb: 115, 82, 230;
   --accent: #7352e6;
   --accent-soft: rgba(115, 82, 230, 0.18);
   --case-coral: #8f72f4;
@@ -180,18 +183,31 @@
   grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
   gap: 58px;
   align-items: center;
+  border: 1px solid rgba(var(--intro-accent-rgb), 0.28);
   border-radius: 36px;
   background:
-    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(103, 212, 156, 0.28), transparent 35%),
-    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(255, 90, 73, 0.2), transparent 34%),
-    #fbfaf7;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
-  transition: box-shadow 0.35s ease;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.075), transparent 42%),
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(var(--intro-accent-rgb), 0.24), transparent 42%),
+    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(var(--intro-accent-rgb), 0.12), transparent 38%),
+    rgba(15, 15, 17, 0.82);
+  -webkit-backdrop-filter: blur(24px) saturate(135%);
+  backdrop-filter: blur(24px) saturate(135%);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 52px rgba(var(--intro-accent-rgb), 0.08);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
 }
-.case-intro:hover { box-shadow: 0 38px 92px rgba(0, 0, 0, 0.24); }
-.case-intro h2 { color: #171613; }
+.case-intro:hover {
+  border-color: rgba(var(--intro-accent-rgb), 0.48);
+  box-shadow:
+    0 38px 92px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 0 68px rgba(var(--intro-accent-rgb), 0.13);
+}
+.case-intro h2 { color: #f8f5ef; }
 .case-intro .case-prose p {
-  color: #3f3b35;
+  color: #d2cec6;
   font-weight: 500;
 }
 .case-intro .case-highlight {
@@ -237,10 +253,10 @@
   height: auto;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(23, 22, 19, 0.12);
+  border: 1px solid rgba(var(--intro-accent-rgb), 0.28);
   border-radius: 18px;
   background: #ebe9e2;
-  box-shadow: 0 18px 42px rgba(23, 22, 19, 0.14);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.32);
 }
 .case-idea-stock img {
   width: 100%;
@@ -265,11 +281,8 @@
 .rookmarket-page .case-intro {
   padding: 52px;
   border-radius: 36px;
-  background: #fff;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
 }
-.rookmarket-page .case-intro:hover { box-shadow: 0 38px 92px rgba(0, 0, 0, 0.24); }
-.rookmarket-page .case-intro .case-prose p { color: #3f3b35; }
+.rookmarket-page .case-intro .case-prose p { color: #d2cec6; }
 .rookmarket-page .case-accent-text {
   color: #ff725f;
   font-weight: 650;
@@ -531,13 +544,14 @@
 
 .hustle-page .case-intro {
   background:
-    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(241, 200, 74, 0.34), transparent 35%),
-    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(114, 198, 148, 0.2), transparent 34%),
-    #fbfaf7;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.075), transparent 42%),
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(215, 169, 21, 0.24), transparent 42%),
+    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(215, 169, 21, 0.1), transparent 38%),
+    rgba(15, 15, 14, 0.82);
 }
-.hustle-page .case-intro .case-highlight { color: #9a7200; }
+.hustle-page .case-intro .case-highlight { color: #f1c84a; }
 .hustle-page .case-intro .case-accent-text {
-  color: #8b6500;
+  color: #f1c84a;
   font-weight: 700;
 }
 .hustle-page .case-button-primary { color: #15150f; }
@@ -550,13 +564,14 @@
 
 .vibez-page .case-intro {
   background:
-    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(143, 114, 244, 0.32), transparent 35%),
-    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(101, 185, 215, 0.24), transparent 34%),
-    #fbfaf7;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.075), transparent 42%),
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(115, 82, 230, 0.28), transparent 42%),
+    radial-gradient(circle at var(--spot-x-alt) var(--spot-y-alt), rgba(115, 82, 230, 0.12), transparent 38%),
+    rgba(14, 13, 18, 0.82);
 }
-.vibez-page .case-intro .case-highlight { color: #6848d0; }
+.vibez-page .case-intro .case-highlight { color: #9b83ff; }
 .vibez-page .case-intro .case-accent-text {
-  color: #6848d0;
+  color: #9b83ff;
   font-weight: 700;
 }
 .vibez-page .case-pillars article:nth-child(1):hover { box-shadow: 0 22px 54px rgba(101, 185, 215, 0.2); }

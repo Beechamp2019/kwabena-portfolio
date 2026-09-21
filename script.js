@@ -60,9 +60,9 @@ const tabButtons = document.querySelectorAll(".tab-btn");
 const workSectionNumber = document.querySelector("#work .section-num");
 const workSectionTitle = document.querySelector("#work .section-head h2");
 const workHeadings = {
-  projects: { number: "01.", title: "Projects" },
-  internships: { number: "02.", title: "Internships" },
-  research: { number: "03.", title: "Research Papers" }
+  projects: { number: "01.", title: "PROJECTS" },
+  internships: { number: "02.", title: "INTERNSHIPS" },
+  research: { number: "03.", title: "RESEARCH PAPERS" }
 };
 let tabIndicator;
 
