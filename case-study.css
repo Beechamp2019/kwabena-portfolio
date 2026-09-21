@@ -15,6 +15,7 @@
 .rookmarket-page {
   --accent: #d8242f;
   --accent-soft: rgba(216, 36, 47, 0.18);
+  --case-coral: #f0444f;
 }
 .hustle-page {
   --intro-accent-rgb: 215, 169, 21;
@@ -289,18 +290,18 @@
   border-color: rgba(104, 72, 208, 0.3);
   box-shadow: 0 18px 38px rgba(104, 72, 208, 0.2);
 }
-.rookmarket-page .case-intro .case-highlight { color: #d64032; }
+.rookmarket-page .case-intro .case-highlight { color: var(--case-coral); }
 .rookmarket-page .case-intro {
   padding: 52px;
   border-radius: 36px;
 }
 .rookmarket-page .case-intro .case-prose p { color: #d2cec6; }
 .rookmarket-page .case-accent-text {
-  color: #ff725f;
+  color: var(--case-coral);
   font-weight: 650;
 }
-.rookmarket-page .case-intro .case-accent-text { color: #d64032; }
-.rookmarket-page .case-pillars .case-accent-text { color: #d64032; }
+.rookmarket-page .case-intro .case-accent-text,
+.rookmarket-page .case-pillars .case-accent-text { color: var(--case-coral); }
 .case-section h2,
 .case-next h2 {
   margin: 0;
