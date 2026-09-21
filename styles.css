@@ -138,8 +138,42 @@ a { color: inherit; }
   display: flex;
   justify-content: flex-end;
   align-self: end;
+  isolation: isolate;
+}
+.hero-photo-wrap::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: -28px;
+  bottom: 0;
+  width: 118%;
+  height: 96%;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(240, 89, 42, 0.17) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 89, 42, 0.17) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(ellipse at 58% 58%, #000 10%, rgba(0, 0, 0, 0.82) 46%, transparent 82%);
+  opacity: 0.5;
+  animation: hero-grid-drift 16s linear infinite, hero-grid-breathe 6s ease-in-out infinite alternate;
+}
+.hero-photo-wrap::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 5%;
+  width: 88%;
+  height: 72%;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(240, 89, 42, 0.13), transparent 68%);
+  filter: blur(18px);
+  animation: hero-grid-glow 7s ease-in-out infinite alternate;
 }
 .hero-photo {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 440px;
   height: auto;
@@ -151,6 +185,21 @@ a { color: inherit; }
 .hero-photo-wrap:hover .hero-photo {
   transform: translateY(-4px);
   filter: drop-shadow(0 8px 24px rgba(240, 89, 42, 0.24));
+}
+
+@keyframes hero-grid-drift {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 38px 38px, 38px 38px; }
+}
+
+@keyframes hero-grid-breathe {
+  from { opacity: 0.26; }
+  to { opacity: 0.48; }
+}
+
+@keyframes hero-grid-glow {
+  from { transform: translate3d(-4%, 2%, 0) scale(0.94); opacity: 0.48; }
+  to { transform: translate3d(5%, -3%, 0) scale(1.06); opacity: 0.78; }
 }
 
 /* SECTIONS */
@@ -598,6 +647,8 @@ a { color: inherit; }
   .section-head::after { transition: none; }
   .tab-panel.active { animation: none; }
   .hero-photo-wrap:hover .hero-photo { transform: none; }
+  .hero-photo-wrap::before,
+  .hero-photo-wrap::after { animation: none; }
   .project-card:hover { translate: none; }
   .project-card:hover .project-arrow { transform: none; }
   .internship-photo:hover img { transform: none; }
