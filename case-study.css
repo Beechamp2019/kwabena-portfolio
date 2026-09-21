@@ -261,9 +261,7 @@
   font-weight: 650;
 }
 .rookmarket-page .case-intro .case-accent-text { color: #d64032; }
-.rookmarket-page .case-pillars article:nth-child(1) .case-accent-text { color: #168357; }
-.rookmarket-page .case-pillars article:nth-child(2) .case-accent-text { color: #d64032; }
-.rookmarket-page .case-pillars article:nth-child(3) .case-accent-text { color: #a66a12; }
+.rookmarket-page .case-pillars .case-accent-text { color: #d64032; }
 .case-section h2,
 .case-next h2 {
   margin: 0;
@@ -373,6 +371,15 @@
 }
 .case-pillars article:nth-child(3)::after,
 .case-pillars article:nth-child(3) > span { background: var(--case-amber); }
+.rookmarket-page .case-pillars article {
+  border-top-color: var(--case-coral);
+  background: linear-gradient(180deg, rgba(255, 90, 73, 0.24), #fbfaf7 58%);
+}
+.rookmarket-page .case-pillars article::after,
+.rookmarket-page .case-pillars article > span { background: var(--case-coral); }
+.rookmarket-page .case-pillars article:hover {
+  box-shadow: 0 22px 54px rgba(255, 90, 73, 0.18);
+}
 .case-pillars article:nth-child(n) { background-size: 100% 100%; }
 .case-pillars article:nth-child(n):hover { background-size: 100% 138%; }
 .case-pillars h3,
