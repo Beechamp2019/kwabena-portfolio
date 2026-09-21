@@ -176,10 +176,10 @@
   --spot-x-alt: 90%;
   --spot-y-alt: 24%;
   position: relative;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  column-gap: 72px;
-  row-gap: 30px;
+  padding: 52px;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: 58px;
+  align-items: center;
   border-radius: 36px;
   background:
     radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(103, 212, 156, 0.28), transparent 35%),
@@ -198,8 +198,20 @@
   color: #218f63;
   text-shadow: none;
 }
+.case-intro-main,
+.case-intro-content {
+  min-width: 0;
+}
+.case-intro-main {
+  display: grid;
+  gap: 30px;
+  align-content: center;
+}
+.case-intro-content {
+  display: grid;
+  gap: 22px;
+}
 .case-idea-visual {
-  grid-column: 1 / -1;
   width: clamp(86px, 8vw, 108px);
   aspect-ratio: 1;
   margin: 0;
@@ -221,8 +233,8 @@
   box-shadow: 0 24px 48px rgba(23, 22, 19, 0.22);
 }
 .case-idea-stock {
-  aspect-ratio: 16 / 9;
-  margin: 26px 0 0;
+  height: clamp(176px, 15vw, 210px);
+  margin: 0;
   overflow: hidden;
   border: 1px solid rgba(23, 22, 19, 0.12);
   border-radius: 18px;
@@ -250,8 +262,7 @@
 }
 .rookmarket-page .case-intro .case-highlight { color: #d64032; }
 .rookmarket-page .case-intro {
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding: 52px;
   border-radius: 36px;
   background: #fff;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
@@ -627,6 +638,12 @@
 @media (max-width: 900px) {
   .case-hero { grid-template-columns: 1fr; gap: 48px; padding-top: 64px; }
   .case-section { grid-template-columns: 1fr; gap: 38px; padding-top: 90px; padding-bottom: 90px; }
+  .case-intro,
+  .rookmarket-page .case-intro {
+    padding: 46px;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 38px;
+  }
   .case-pillars { grid-template-columns: 1fr; }
   .case-pillars { margin-top: 48px; }
   .case-pillars article { min-height: 190px; }
@@ -649,10 +666,13 @@
   .case-idea-heading { margin-top: 70px; padding-left: 20px; padding-right: 20px; }
   .case-intro,
   .rookmarket-page .case-intro {
-    padding-top: 58px;
-    padding-bottom: 58px;
-    row-gap: 28px;
+    padding: 34px 26px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
+  .case-intro-main { gap: 24px; }
+  .case-intro-content { gap: 18px; }
+  .case-idea-stock { height: auto; aspect-ratio: 16 / 9; }
   .case-idea-visual { width: 82px; }
   .case-pillars,
   .case-flow,
