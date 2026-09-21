@@ -377,6 +377,32 @@ a { color: inherit; }
 }
 
 /* PROJECTS */
+.project-group-heading {
+  margin: 0 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.project-group-heading::after {
+  height: 1px;
+  flex: 1;
+  background: var(--border);
+  content: "";
+}
+.project-group-heading span {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.project-group-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  letter-spacing: -0.025em;
+}
+.project-group-heading-following { margin: 70px 0 0; }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
