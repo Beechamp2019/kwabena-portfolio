@@ -653,6 +653,56 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
+.case-next .case-next-copy {
+  max-width: 650px;
+  margin: 20px 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-transform: none;
+  opacity: 0.78;
+}
+.store-launch-row {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.store-badge {
+  min-width: 194px;
+  min-height: 64px;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  background: #171715;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+}
+.store-badge svg {
+  width: 27px;
+  height: 27px;
+  flex: 0 0 27px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.store-badge span { display: flex; flex-direction: column; line-height: 1.05; }
+.store-badge small {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.store-badge strong { font-family: var(--font-display); font-size: 1.05rem; }
+.case-next-actions { margin-top: 22px; }
 .case-next .case-button-primary { background: #fff; color: #171613; }
 .case-next .case-button-secondary { border-color: rgba(255,255,255,0.45); color: #fff; }
 .case-footer {
@@ -691,6 +741,7 @@
   .case-lead { margin-top: 24px; }
   .case-actions { align-items: stretch; flex-direction: column; }
   .case-button { width: 100%; }
+  .store-badge { width: 100%; }
   .case-section { padding: 80px 20px; }
   .case-idea-heading { margin-top: 70px; padding-left: 20px; padding-right: 20px; }
   .case-intro,
