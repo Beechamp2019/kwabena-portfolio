@@ -318,6 +318,51 @@ a { color: inherit; }
   margin: 0;
 }
 .entry-card .project-links { margin-top: 14px; }
+.internship-card {
+  padding: 0;
+  overflow: hidden;
+}
+.internship-copy { padding: 32px; }
+.entry-kicker {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.internship-card .entry-head { margin-bottom: 14px; }
+.internship-card .entry-head h3 { font-size: clamp(1.65rem, 3vw, 2.35rem); }
+.internship-card .entry-meta { font-size: 0.95rem; }
+.internship-card p { max-width: 720px; line-height: 1.7; }
+.internship-gallery {
+  padding: 0 16px 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
+  grid-template-rows: repeat(2, 190px);
+  gap: 10px;
+}
+.internship-photo {
+  margin: 0;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 7px);
+  background: #111;
+}
+.internship-photo-featured { grid-row: 1 / span 2; }
+.internship-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), filter 0.3s ease;
+}
+.internship-photo-featured img { object-position: center 47%; }
+.internship-photo-portrait img { object-position: center 57%; }
+.internship-photo:hover img {
+  transform: scale(1.035);
+  filter: saturate(1.06) contrast(1.02);
+}
 
 /* PROJECTS */
 .projects-grid {
@@ -519,6 +564,7 @@ a { color: inherit; }
   .hero-photo,
   .project-card,
   .project-thumb-image img,
+  .internship-photo img,
   .project-arrow,
   .nav-social a,
   .section-head::after { transition: none; }
@@ -526,6 +572,7 @@ a { color: inherit; }
   .hero-photo-wrap:hover .hero-photo { transform: none; }
   .project-card:hover { translate: none; }
   .project-card:hover .project-arrow { transform: none; }
+  .internship-photo:hover img { transform: none; }
 }
 
 /* RESPONSIVE */
@@ -547,4 +594,14 @@ a { color: inherit; }
   .hero-photo-wrap { left: 98px; }
   .contact-box { padding: 36px 24px; }
   .section-cta { margin-left: 0; }
+  .internship-copy { padding: 24px; }
+  .internship-card .entry-head { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .internship-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 250px 150px;
+  }
+  .internship-photo-featured {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
 }
