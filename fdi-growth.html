@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDI and Economic Growth — Kwabena Adu Darko-Asare</title>
+  <meta name="description" content="An econometric analysis of foreign direct investment and GDP per capita growth across 48 Sub-Saharan African economies from 2000 to 2024." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260921-25" />
+  <link rel="stylesheet" href="research.css?v=20260921-1" />
+</head>
+<body class="research-page">
+  <header class="research-nav">
+    <a href="index.html#work" aria-label="Back to portfolio">← <span>KADA</span></a>
+    <a href="assets/research/fdi-economic-growth-sub-saharan-africa.pdf" target="_blank" rel="noopener">Read paper ↗</a>
+  </header>
+
+  <main>
+    <section class="research-hero">
+      <p class="research-eyebrow">Development Economics · Stata · Panel Data</p>
+      <h1>Foreign Direct Investment and Economic Growth in Sub-Saharan Africa</h1>
+      <p class="research-period">48 economies · 2000–2024</p>
+
+      <div class="research-question">
+        <span>Research question</span>
+        <p>Is greater foreign direct investment associated with faster GDP per capita growth in Sub-Saharan African economies?</p>
+      </div>
+
+      <div class="research-overview">
+        <span>Project overview</span>
+        <p>Using World Bank World Development Indicators, I constructed a panel dataset covering 48 Sub-Saharan African economies from 2000 to 2024. I used Stata to examine the relationship between foreign direct investment and GDP per capita growth through OLS, multivariate regression, country fixed effects, clustered standard errors, and an outlier robustness test.</p>
+      </div>
+
+      <div class="research-actions" aria-label="Project resources">
+        <a class="research-button research-button-primary" href="assets/research/fdi-economic-growth-sub-saharan-africa.pdf" target="_blank" rel="noopener">View Research Paper ↗</a>
+        <a class="research-button" href="https://github.com/Beechamp2019/kwabena-portfolio/blob/main/assets/research/fdi-growth-ssa.do" target="_blank" rel="noopener">View Stata Code ↗</a>
+        <a class="research-button" href="assets/research/ssa-fdi-growth-2000-2024.dta" download>View Dataset ↓</a>
+      </div>
+    </section>
+
+    <section class="research-figure-section">
+      <figure class="research-figure">
+        <img src="assets/research/fdi-growth-scatter.png" alt="Scatterplot showing FDI net inflows and GDP per capita growth across Sub-Saharan African economies" />
+        <figcaption><strong>Figure 1.</strong> FDI and GDP per capita growth across Sub-Saharan African economies, 2000 to 2024.</figcaption>
+      </figure>
+    </section>
+
+    <section class="research-section research-approach">
+      <div class="research-section-heading">
+        <p class="research-eyebrow">Method</p>
+        <h2>Approach</h2>
+      </div>
+      <dl class="approach-grid">
+        <div><dt>Data</dt><dd><a href="https://databank.worldbank.org/source/world-development-indicators" target="_blank" rel="noopener">World Bank World Development Indicators ↗</a></dd></div>
+        <div><dt>Sample</dt><dd>48 Sub-Saharan African economies, 2000 to 2024</dd></div>
+        <div><dt>Outcome</dt><dd>GDP per capita growth</dd></div>
+        <div><dt>Main variable</dt><dd>FDI net inflows as % of GDP</dd></div>
+        <div><dt>Controls</dt><dd>Gross capital formation, trade openness, population growth</dd></div>
+        <div><dt>Methods</dt><dd>OLS, robust standard errors, country fixed effects, clustered standard errors, percentile-based robustness testing</dd></div>
+      </dl>
+    </section>
+
+    <section class="research-section research-results">
+      <div class="research-section-heading research-results-heading">
+        <div>
+          <p class="research-eyebrow">Econometric analysis</p>
+          <h2>Regression results</h2>
+        </div>
+        <p>The FDI coefficient moves from <strong>0.0798</strong> in simple OLS to <strong>0.0041</strong> with controls, <strong>−0.0131</strong> with country fixed effects, and <strong>0.0126</strong> in the robustness specification.</p>
+      </div>
+
+      <div class="regression-table-wrap" tabindex="0" aria-label="Horizontally scrollable regression results">
+        <table class="regression-table">
+          <caption>Table 1. FDI and economic growth in Sub-Saharan Africa</caption>
+          <thead>
+            <tr><th scope="col">Variable</th><th scope="col">OLS</th><th scope="col">OLS + Controls</th><th scope="col">Country FE</th><th scope="col">FE Robustness</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">FDI</th><td>0.0798<span>(0.0516)</span></td><td>0.00406<span>(0.0336)</span></td><td>−0.0131<span>(0.0384)</span></td><td>0.0126<span>(0.0631)</span></td></tr>
+            <tr><th scope="row">Investment</th><td>—</td><td>0.116***<span>(0.0287)</span></td><td>0.0831*<span>(0.0435)</span></td><td>0.0869**<span>(0.0423)</span></td></tr>
+            <tr><th scope="row">Trade</th><td>—</td><td>−0.00644<span>(0.00696)</span></td><td>0.0466**<span>(0.0201)</span></td><td>0.0450**<span>(0.0203)</span></td></tr>
+            <tr><th scope="row">Population growth</th><td>—</td><td>−0.448<span>(0.308)</span></td><td>−0.514<span>(0.489)</span></td><td>−0.826<span>(0.671)</span></td></tr>
+            <tr class="table-summary"><th scope="row">Observations</th><td>1,162</td><td>995</td><td>995</td><td>978</td></tr>
+            <tr class="table-summary"><th scope="row">R-squared</th><td>0.0140</td><td>0.0453</td><td>0.0450</td><td>0.0495</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Standard errors in parentheses. * p &lt; 0.10, ** p &lt; 0.05, *** p &lt; 0.01.</p>
+    </section>
+
+    <section class="research-section research-findings">
+      <div class="research-section-heading">
+        <p class="research-eyebrow">Interpretation</p>
+        <h2>Key Findings</h2>
+      </div>
+      <div class="finding-grid">
+        <article>
+          <span>Primary finding</span>
+          <p>The simple OLS model suggested a positive relationship between FDI and economic growth, but the estimate was not statistically significant. After introducing economic controls and country fixed effects, the estimated FDI relationship moved close to zero and remained statistically insignificant. The conclusion was unchanged after excluding extreme FDI observations.</p>
+        </article>
+        <article>
+          <span>Secondary finding</span>
+          <p>Domestic investment and trade openness showed stronger positive associations with growth in later specifications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="research-section research-skills">
+      <div class="research-section-heading">
+        <p class="research-eyebrow">Capabilities</p>
+        <h2>Tools &amp; Skills</h2>
+      </div>
+      <div class="skill-row" aria-label="Tools and skills used">
+        <span>Stata</span><span>Econometrics</span><span>Panel Data</span><span>Fixed Effects</span><span>OLS</span><span>Robust Standard Errors</span><span>Data Cleaning</span><span>Data Visualization</span><span>Development Economics</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="research-footer">
+    <span>Kwabena Adu Darko-Asare</span>
+    <a href="index.html#work">Back to portfolio ↑</a>
+  </footer>
+  <script src="script.js?v=20260920-2"></script>
+</body>
+</html>
