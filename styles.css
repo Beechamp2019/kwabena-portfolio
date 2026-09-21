@@ -150,8 +150,8 @@ a { color: inherit; }
   height: 96%;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(240, 89, 42, 0.17) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(240, 89, 42, 0.17) 1px, transparent 1px);
+    linear-gradient(rgba(240, 89, 42, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 89, 42, 0.22) 1px, transparent 1px);
   background-size: 38px 38px;
   mask-image: radial-gradient(ellipse at 58% 58%, #000 10%, rgba(0, 0, 0, 0.82) 46%, transparent 82%);
   opacity: 0.5;
@@ -193,8 +193,8 @@ a { color: inherit; }
 }
 
 @keyframes hero-grid-breathe {
-  from { opacity: 0.26; }
-  to { opacity: 0.48; }
+  from { opacity: 0.38; }
+  to { opacity: 0.62; }
 }
 
 @keyframes hero-grid-glow {
