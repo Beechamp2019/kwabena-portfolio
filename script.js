@@ -110,9 +110,9 @@ tabButtons.forEach((button) => {
   });
 });
 
-// Let the RookMarket idea gradients respond subtly to the pointer.
+// Let each project idea gradient respond subtly to the pointer.
 const ideaPanel = document.querySelector(".case-intro");
-if (ideaPanel && !document.body.classList.contains("rookmarket-page") && !prefersReducedMotion) {
+if (ideaPanel && !prefersReducedMotion) {
   let frame;
   const updateSpotlight = (event) => {
     const rect = ideaPanel.getBoundingClientRect();
