@@ -12,6 +12,10 @@
   background: #11110f;
   overflow-x: hidden;
 }
+.rookmarket-page {
+  --accent: #d8242f;
+  --accent-soft: rgba(216, 36, 47, 0.18);
+}
 .hustle-page {
   --intro-accent-rgb: 215, 169, 21;
   --accent: #d7a915;
@@ -50,6 +54,14 @@
 .case-back { display: inline-flex; align-items: center; gap: 10px; }
 .case-back span { letter-spacing: 0.05em; }
 .case-live-link { color: var(--accent); }
+.rookmarket-page .case-live-link {
+  padding: 10px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 10px 28px rgba(216, 36, 47, 0.24);
+}
 .case-back:hover,
 .case-live-link:hover { opacity: 0.75; }
 
