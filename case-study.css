@@ -233,7 +233,8 @@
   box-shadow: 0 24px 48px rgba(23, 22, 19, 0.22);
 }
 .case-idea-stock {
-  height: clamp(176px, 15vw, 210px);
+  aspect-ratio: 16 / 9;
+  height: auto;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(23, 22, 19, 0.12);
@@ -672,7 +673,6 @@
   }
   .case-intro-main { gap: 24px; }
   .case-intro-content { gap: 18px; }
-  .case-idea-stock { height: auto; aspect-ratio: 16 / 9; }
   .case-idea-visual { width: 82px; }
   .case-pillars,
   .case-flow,
