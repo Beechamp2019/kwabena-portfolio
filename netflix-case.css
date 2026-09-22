@@ -397,14 +397,15 @@
   margin-top: 70px;
   margin-bottom: 70px;
   padding: clamp(42px, 7vw, 86px);
+  border: 1px solid var(--netflix-border);
   border-radius: 28px;
-  background: #181818;
-  box-shadow: 0 28px 70px rgba(31, 24, 22, 0.16);
+  background: var(--netflix-elevated);
+  box-shadow: 0 28px 70px rgba(31, 24, 22, 0.08);
 }
 .netflix-recommendation h2,
-.netflix-recommendation li { color: #fff; }
-.netflix-recommendation .netflix-eyebrow { color: #ff4651; }
-.netflix-recommendation > p:not(.netflix-eyebrow) { max-width: 820px; margin: 30px 0 0; color: #fff; font-size: 1.02rem; line-height: 1.75; }
+.netflix-recommendation li { color: var(--netflix-text); }
+.netflix-recommendation .netflix-eyebrow { color: var(--netflix-red-bright); }
+.netflix-recommendation > p:not(.netflix-eyebrow) { max-width: 820px; margin: 30px 0 0; color: var(--netflix-muted); font-size: 1.02rem; line-height: 1.75; }
 .netflix-recommendation ul {
   max-width: 900px;
   margin: 38px 0 0;
@@ -416,20 +417,27 @@
 }
 .netflix-recommendation li {
   position: relative;
-  padding: 20px 0 20px 64px;
-  border-top: 1px solid rgba(255,255,255,0.3);
+  min-height: 72px;
+  padding: 24px 0 20px 58px;
+  border-top: 1px solid var(--netflix-border);
   font-weight: 600;
   counter-increment: recommendation-reasons;
 }
 .netflix-recommendation li::before {
   position: absolute;
-  top: 19px;
+  top: 17px;
   left: 0;
-  color: #ff4651;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--netflix-red);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-display);
-  font-size: 0.9rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
   content: counter(recommendation-reasons, decimal-leading-zero);
 }
 
