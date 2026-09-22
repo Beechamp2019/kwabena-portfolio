@@ -8,7 +8,7 @@
   --netflix-muted: #6f5c56;
   --netflix-border: rgba(104, 45, 43, 0.22);
   --netflix-max: 1160px;
-  background: linear-gradient(90deg, #ede8d0 0%, #efd2c6 54%, #d47b7d 100%);
+  background: linear-gradient(90deg, #ede8d0 0%, #e2c2a7 52%, #d05b48 100%);
   color: var(--netflix-text);
 }
 
