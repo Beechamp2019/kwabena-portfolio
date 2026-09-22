@@ -1,14 +1,14 @@
 .netflix-case-page {
   --netflix-red: #e50914;
   --netflix-red-bright: #a90a12;
-  --netflix-bg: #ffffff;
+  --netflix-bg: #ede8d0;
   --netflix-elevated: rgba(255, 250, 243, 0.84);
   --netflix-secondary: rgba(246, 226, 213, 0.88);
   --netflix-text: #271714;
   --netflix-muted: #6f5c56;
   --netflix-border: rgba(104, 45, 43, 0.22);
   --netflix-max: 1160px;
-  background: linear-gradient(90deg, #ffffff 0%, #f7ded9 52%, #d05b48 100%);
+  background: linear-gradient(90deg, #fffdf7 0%, #ede8d0 48%, #d9a08f 100%);
   color: var(--netflix-text);
 }
 
