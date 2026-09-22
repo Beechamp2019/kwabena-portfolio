@@ -179,7 +179,7 @@
   background: var(--netflix-secondary);
 }
 .netflix-metrics strong {
-  color: var(--netflix-text);
+  color: var(--netflix-red);
   font-family: var(--font-display);
   font-size: clamp(3.2rem, 7vw, 5.4rem);
   line-height: 1;
@@ -405,9 +405,33 @@
 .netflix-recommendation li { color: #fff; }
 .netflix-recommendation .netflix-eyebrow { color: #ff4651; }
 .netflix-recommendation > p:not(.netflix-eyebrow) { max-width: 820px; margin: 30px 0 0; color: #fff; font-size: 1.02rem; line-height: 1.75; }
-.netflix-recommendation ul { margin: 38px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 34px; list-style: none; }
-.netflix-recommendation li { position: relative; padding: 15px 0 15px 28px; border-top: 1px solid rgba(255,255,255,0.3); font-weight: 600; }
-.netflix-recommendation li::before { position: absolute; left: 0; color: #ff4651; content: "✓"; }
+.netflix-recommendation ul {
+  max-width: 900px;
+  margin: 38px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  counter-reset: recommendation-reasons;
+}
+.netflix-recommendation li {
+  position: relative;
+  padding: 20px 0 20px 64px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  font-weight: 600;
+  counter-increment: recommendation-reasons;
+}
+.netflix-recommendation li::before {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  color: #ff4651;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  content: counter(recommendation-reasons, decimal-leading-zero);
+}
 
 .roadmap-grid {
   position: relative;
