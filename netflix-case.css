@@ -1,14 +1,14 @@
 .netflix-case-page {
   --netflix-red: #e50914;
-  --netflix-red-bright: #a90a12;
-  --netflix-bg: #ede8d0;
-  --netflix-elevated: rgba(255, 250, 243, 0.84);
-  --netflix-secondary: rgba(246, 226, 213, 0.88);
-  --netflix-text: #271714;
-  --netflix-muted: #6f5c56;
-  --netflix-border: rgba(104, 45, 43, 0.22);
+  --netflix-red-bright: #ff3040;
+  --netflix-bg: #000000;
+  --netflix-elevated: rgba(17, 17, 17, 0.9);
+  --netflix-secondary: rgba(24, 24, 24, 0.92);
+  --netflix-text: #ffffff;
+  --netflix-muted: #b3b3b3;
+  --netflix-border: rgba(255, 255, 255, 0.14);
   --netflix-max: 1160px;
-  background: linear-gradient(90deg, #fffdf7 0%, #ede8d0 48%, #d9a08f 100%);
+  background: linear-gradient(90deg, #000000 0%, #150104 56%, #5f0810 100%);
   color: var(--netflix-text);
 }
 
@@ -84,10 +84,10 @@
 .netflix-tags { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 9px; }
 .netflix-tags span {
   padding: 8px 13px;
-  border: 1px solid rgba(125, 21, 26, 0.38);
+  border: 1px solid rgba(255, 48, 64, 0.48);
   border-radius: 999px;
-  background: rgba(255, 250, 243, 0.42);
-  color: #73151a;
+  background: rgba(229, 9, 20, 0.12);
+  color: #ffffff;
   font-size: 0.74rem;
   font-weight: 700;
 }
@@ -102,15 +102,15 @@
   border: 1px solid var(--netflix-border);
   border-radius: 24px;
   background:
-    radial-gradient(circle at 75% 20%, rgba(229, 9, 20, 0.18), transparent 42%),
+    radial-gradient(circle at 75% 20%, rgba(229, 9, 20, 0.26), transparent 42%),
     var(--netflix-elevated);
 }
 .netflix-hero-verdict::before {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(121, 46, 43, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(121, 46, 43, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 36px 36px;
   content: "";
 }
@@ -224,17 +224,17 @@
   border-top: 1px solid var(--netflix-border);
 }
 .competitor-label strong { display: block; color: var(--netflix-text); font-size: 0.9rem; }
-.competitor-label span { display: block; margin-top: 3px; color: var(--netflix-muted); font-size: 0.68rem; line-height: 1.35; }
+.competitor-label span { display: block; margin-top: 3px; color: #858585; font-size: 0.68rem; line-height: 1.35; }
 .competitor-track {
   position: relative;
   height: 26px;
-  border-left: 1px solid rgba(94, 49, 45, 0.35);
-  border-bottom: 1px solid rgba(94, 49, 45, 0.18);
-  background: rgba(141, 66, 61, 0.08);
+  border-left: 1px solid #505050;
+  border-bottom: 1px solid #292929;
+  background: #161616;
 }
 .competitor-track::before,
-.competitor-track::after { position: absolute; z-index: 0; top: 0; bottom: 0; border-left: 1px solid rgba(94, 49, 45, 0.16); content: ""; }
-.competitor-track::before { left: 25%; width: 25%; border-right: 1px solid rgba(94, 49, 45, 0.16); }
+.competitor-track::after { position: absolute; z-index: 0; top: 0; bottom: 0; border-left: 1px solid #2a2a2a; content: ""; }
+.competitor-track::before { left: 25%; width: 25%; border-right: 1px solid #2a2a2a; }
 .competitor-track::after { left: 75%; }
 .competitor-track span {
   position: absolute;
@@ -260,7 +260,7 @@
   grid-template-columns: minmax(150px, 0.55fr) minmax(220px, 1fr) minmax(118px, auto);
   gap: 22px;
 }
-.competitor-axis div { display: flex; justify-content: space-between; color: rgba(77, 46, 42, 0.62); }
+.competitor-axis div { display: flex; justify-content: space-between; color: #777777; }
 .competitor-axis small { font-size: 0.6rem; }
 .netflix-insight {
   margin-top: 18px;
@@ -290,7 +290,7 @@
   border-radius: 18px;
   background: var(--netflix-elevated);
 }
-.option-card-recommended { border-color: var(--netflix-red); background: linear-gradient(155deg, rgba(229, 9, 20, 0.14), rgba(255, 250, 243, 0.9) 48%); box-shadow: 0 20px 65px rgba(126, 28, 32, 0.13); }
+.option-card-recommended { border-color: var(--netflix-red); background: linear-gradient(155deg, rgba(229, 9, 20, 0.2), rgba(17, 17, 17, 0.96) 48%); box-shadow: 0 20px 65px rgba(229, 9, 20, 0.16); }
 .option-letter { color: var(--netflix-red-bright); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
 .option-card h3 { margin: 14px 0 12px; font-family: var(--font-display); font-size: 1.65rem; line-height: 1.08; }
 .option-card > p { min-height: 78px; margin: 0; color: var(--netflix-muted); font-size: 0.88rem; line-height: 1.6; }
@@ -299,7 +299,7 @@
 .option-card dt { color: var(--netflix-muted); font-size: 0.77rem; }
 .option-card dd { margin: 0; color: var(--netflix-text); font-size: 0.77rem; font-weight: 700; text-align: right; }
 .option-status { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--netflix-border); font-size: 0.72rem; letter-spacing: 0.11em; text-transform: uppercase; }
-.option-status-no { color: #806e67; }
+.option-status-no { color: #8e8e8e; }
 .option-status-future { color: var(--netflix-text); }
 .option-status-yes { color: var(--netflix-red-bright); }
 
@@ -310,14 +310,14 @@
   gap: 18px;
 }
 .economics-flow { padding: 34px; border: 1px solid var(--netflix-border); border-radius: 20px; background: var(--netflix-elevated); }
-.economics-flow-growth { border-color: var(--netflix-red); background: linear-gradient(145deg, rgba(229, 9, 20, 0.13), rgba(255, 250, 243, 0.9) 52%); }
+.economics-flow-growth { border-color: var(--netflix-red); background: linear-gradient(145deg, rgba(229, 9, 20, 0.18), rgba(17, 17, 17, 0.96) 52%); }
 .economics-flow h3 { margin: 0 0 28px; font-family: var(--font-display); font-size: 1.75rem; }
 .economics-flow ol { margin: 0; padding: 0; list-style: none; }
 .economics-flow li { position: relative; padding: 16px 16px 34px; border: 1px solid var(--netflix-border); border-radius: 12px; color: var(--netflix-text); font-size: 0.9rem; text-align: center; }
 .economics-flow li:not(:last-child) { margin-bottom: 20px; }
-.economics-flow li:not(:last-child)::after { position: absolute; bottom: -25px; left: 50%; color: #8b6f67; content: "↓"; transform: translateX(-50%); }
+.economics-flow li:not(:last-child)::after { position: absolute; bottom: -25px; left: 50%; color: #747474; content: "↓"; transform: translateX(-50%); }
 .economics-flow li:last-child { padding-bottom: 16px; font-weight: 800; }
-.economics-flow-risk li:last-child { color: #79655f; }
+.economics-flow-risk li:last-child { color: #aaaaaa; }
 .economics-flow-growth li:last-child { border-color: var(--netflix-red); background: var(--netflix-red); color: #fff; }
 
 .audience-evidence-grid {
@@ -345,8 +345,8 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(12px, 3vw, 28px);
-  border-bottom: 1px solid rgba(94, 49, 45, 0.4);
-  background-image: linear-gradient(to bottom, rgba(94, 49, 45, 0.13) 1px, transparent 1px);
+  border-bottom: 1px solid #555555;
+  background-image: linear-gradient(to bottom, #292929 1px, transparent 1px);
   background-size: 100% 33.333%;
 }
 .audience-bar-group {
@@ -396,8 +396,8 @@
   margin-bottom: 70px;
   padding: clamp(42px, 7vw, 86px);
   border-radius: 28px;
-  background: #5f2026;
-  box-shadow: 0 28px 70px rgba(85, 29, 34, 0.2);
+  background: #8f0c15;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
 }
 .netflix-recommendation h2,
 .netflix-recommendation li { color: #fff; }
@@ -416,7 +416,7 @@
 }
 .roadmap-grid::before { position: absolute; top: 24px; right: 12%; left: 12%; height: 1px; background: var(--netflix-red); content: ""; }
 .roadmap-grid article { position: relative; padding: 62px 28px 30px; border: 1px solid var(--netflix-border); border-radius: 18px; background: var(--netflix-elevated); }
-.roadmap-grid article::before { position: absolute; z-index: 1; top: 17px; left: 28px; width: 14px; height: 14px; border: 5px solid #f1ddd0; border-radius: 50%; background: var(--netflix-red); content: ""; }
+.roadmap-grid article::before { position: absolute; z-index: 1; top: 17px; left: 28px; width: 14px; height: 14px; border: 5px solid #110104; border-radius: 50%; background: var(--netflix-red); content: ""; }
 .roadmap-grid span { color: var(--netflix-red-bright); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
 .roadmap-grid h3 { margin: 12px 0; font-family: var(--font-display); font-size: 1.45rem; line-height: 1.15; }
 .roadmap-grid p { margin: 0; color: var(--netflix-muted); font-size: 0.86rem; line-height: 1.65; }
