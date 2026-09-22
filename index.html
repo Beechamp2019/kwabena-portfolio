@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260921-30" />
+  <link rel="stylesheet" href="styles.css?v=20260922-31" />
 </head>
 <body>
 
@@ -39,7 +39,7 @@
       </div>
     </section>
 
-    <!-- WORK (tabbed: Projects / Internships / Research Papers) -->
+    <!-- WORK (tabbed: Projects / Internships / Business Cases) -->
     <section class="section" id="work">
       <div class="section-head reveal">
         <span class="section-num">01.</span>
@@ -49,7 +49,7 @@
       <div class="tab-bar reveal" role="tablist">
         <button class="tab-btn active" data-tab="projects" role="tab" aria-selected="true">Projects</button>
         <button class="tab-btn" data-tab="internships" role="tab" aria-selected="false">Internships</button>
-        <button class="tab-btn" data-tab="research" role="tab" aria-selected="false">Research Papers</button>
+        <button class="tab-btn" data-tab="business" role="tab" aria-selected="false">Business Cases</button>
       </div>
 
       <div class="tab-panels">
@@ -158,31 +158,29 @@
           </div>
         </div>
 
-        <!-- RESEARCH PAPERS PANEL -->
-        <div class="tab-panel" id="panel-research" role="tabpanel" hidden>
-          <!-- EDIT ME: replace with your real research papers -->
-          <div class="entry-list">
-            <article class="entry-card">
-              <div class="entry-head">
-                <h3>Paper Title Goes Here</h3>
-                <span class="entry-meta">Course / Venue · 2026</span>
+        <!-- BUSINESS CASES PANEL -->
+        <div class="tab-panel" id="panel-business" role="tabpanel" hidden>
+          <a class="business-case-card" href="netflix-sports.html">
+            <div class="business-case-visual" aria-hidden="true">
+              <span class="business-case-mark">N</span>
+              <span class="business-case-signal business-case-signal-one"></span>
+              <span class="business-case-signal business-case-signal-two"></span>
+              <span class="business-case-signal business-case-signal-three"></span>
+            </div>
+            <div class="business-case-copy">
+              <span class="project-kicker">Streaming Strategy · Pricing</span>
+              <h3>Netflix Sports Strategy</h3>
+              <p class="business-case-question">Should Netflix launch a dedicated sports subscription?</p>
+              <p>Evaluated Netflix's growing live-sports strategy through competitor pricing, product positioning, advertising economics, and cannibalization risk.</p>
+              <div class="project-tech" aria-label="Business case topics">
+                <span>Strategy</span>
+                <span>Pricing</span>
+                <span>Competitive Analysis</span>
+                <span>Growth</span>
               </div>
-              <p>A one- or two-line summary of the paper's question, method, or findings.</p>
-              <div class="project-links">
-                <a href="#" target="_blank" rel="noopener">Read ↗</a>
-              </div>
-            </article>
-            <article class="entry-card">
-              <div class="entry-head">
-                <h3>Paper Title Goes Here</h3>
-                <span class="entry-meta">Course / Venue · 2025</span>
-              </div>
-              <p>A one- or two-line summary of the paper's question, method, or findings.</p>
-              <div class="project-links">
-                <a href="#" target="_blank" rel="noopener">Read ↗</a>
-              </div>
-            </article>
-          </div>
+              <span class="research-project-link">View Case Study <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
         </div>
 
       </div>
