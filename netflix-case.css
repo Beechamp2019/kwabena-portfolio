@@ -1,14 +1,14 @@
 .netflix-case-page {
   --netflix-red: #e50914;
   --netflix-red-bright: #a90a12;
-  --netflix-bg: #f4e7d4;
+  --netflix-bg: #ede8d0;
   --netflix-elevated: rgba(255, 250, 243, 0.84);
   --netflix-secondary: rgba(246, 226, 213, 0.88);
   --netflix-text: #271714;
   --netflix-muted: #6f5c56;
   --netflix-border: rgba(104, 45, 43, 0.22);
   --netflix-max: 1160px;
-  background: linear-gradient(90deg, #f4e7d4 0%, #efd2c6 54%, #d47b7d 100%);
+  background: linear-gradient(90deg, #ede8d0 0%, #efd2c6 54%, #d47b7d 100%);
   color: var(--netflix-text);
 }
 
@@ -84,11 +84,12 @@
 .netflix-tags { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 9px; }
 .netflix-tags span {
   padding: 8px 13px;
-  border: 1px solid var(--netflix-border);
+  border: 1px solid rgba(125, 21, 26, 0.38);
   border-radius: 999px;
-  color: #d5d5d5;
+  background: rgba(255, 250, 243, 0.42);
+  color: #73151a;
   font-size: 0.74rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .netflix-hero-verdict {
   position: relative;
@@ -395,7 +396,8 @@
   margin-bottom: 70px;
   padding: clamp(42px, 7vw, 86px);
   border-radius: 28px;
-  background: var(--netflix-red);
+  background: #5f2026;
+  box-shadow: 0 28px 70px rgba(85, 29, 34, 0.2);
 }
 .netflix-recommendation h2,
 .netflix-recommendation li { color: #fff; }
