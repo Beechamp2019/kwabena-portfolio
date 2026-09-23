@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260922-33" />
-  <link rel="stylesheet" href="ma-case.css?v=20260923-8" />
+  <link rel="stylesheet" href="ma-case.css?v=20260923-9" />
 </head>
 <body class="ma-case-page">
   <header class="ma-nav">
@@ -67,9 +67,21 @@
     <section class="ma-section" id="transaction">
       <div class="ma-heading"><p class="ma-eyebrow">Transaction Economics</p><h2>What Would DoorDash Pay?</h2><p>Illustrative transaction assumptions based on a $44.41 market reference used for this case—not a fixed current quote.</p></div>
       <div class="transaction-bridge" aria-label="Illustrative transaction value bridge">
-        <article><strong>$44.41</strong><span>Reference Instacart Share Price</span></article><b aria-hidden="true">→</b><article><strong>+25%</strong><span>Illustrative Acquisition Premium</span></article><b aria-hidden="true">→</b><article><strong>$55.51</strong><span>Offer Price Per Share</span></article><b aria-hidden="true">→</b><article><strong>$12.9B</strong><span>Offer Equity Value</span></article><b aria-hidden="true">→</b><article><strong>~$12.0B</strong><span>Transaction Enterprise Value</span></article>
+        <article class="transaction-stage">
+          <span>Reference Price</span><strong>$44.41</strong><small>Instacart Share Price</small>
+        </article>
+        <div class="transaction-connector transaction-premium"><span>+25% acquisition premium</span><i aria-hidden="true"></i></div>
+        <article class="transaction-stage">
+          <span>Offer Price</span><strong>$55.51</strong><small>Per Share</small>
+        </article>
+        <div class="transaction-connector" aria-hidden="true"><i></i></div>
+        <article class="transaction-result">
+          <span>Transaction Value</span>
+          <div class="transaction-equity"><strong>$12.9B</strong><small>Offer Equity Value</small></div>
+          <div class="transaction-ev"><strong>$12.28B</strong><small>Transaction Enterprise Value</small></div>
+          <div class="transaction-multiple"><strong>11.3x</strong><small>EV / Standalone Adjusted EBITDA</small></div>
+        </article>
       </div>
-      <div class="standalone-multiple"><strong>11.1x</strong><span>Standalone EV / Adjusted EBITDA</span></div>
     </section>
 
     <section class="ma-section ma-section-dark" id="synergy-bridge">
