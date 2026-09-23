@@ -94,12 +94,12 @@
 .transaction-bridge article:nth-of-type(5) strong { color: #274c77; }
 .transaction-bridge span { max-width: 145px; color: var(--ma-muted); font-size: 0.67rem; line-height: 1.4; }
 .transaction-bridge > b { color: var(--ma-muted); font-size: 1.1rem; }
-.standalone-multiple { margin-top: 18px; padding: 22px 26px; display: inline-flex; align-items: baseline; gap: 16px; border-radius: 12px; background: #fff0ec; }
+.standalone-multiple { margin-top: 18px; padding: 22px 26px; display: inline-flex; align-items: baseline; gap: 16px; border: 1px solid #d1d8df; border-radius: 12px; background: #eef1f4; }
 .standalone-multiple strong { color: var(--ma-ink); font-family: var(--font-display); font-size: 2.4rem; line-height: 1; }
 .standalone-multiple span { color: var(--ma-muted); font-size: 0.75rem; font-weight: 700; }
 
 .ma-section-dark { position: relative; border: 0; color: var(--ma-ink); }
-.ma-section-dark::before { position: absolute; z-index: -1; inset: 0 calc((100vw - min(var(--ma-max), calc(100vw - 64px))) / -2); background: var(--ma-panel); content: ""; }
+.ma-section-dark::before { position: absolute; z-index: -1; inset: 0 calc((100vw - min(var(--ma-max), calc(100vw - 64px))) / -2); background: #eef1f4; content: ""; }
 .ma-section-dark .ma-heading h2 { color: var(--ma-ink); }
 .synergy-bridge { margin-top: 50px; display: grid; grid-template-columns: 1.15fr auto 0.9fr auto 0.9fr auto 1.15fr; align-items: stretch; gap: 12px; }
 .synergy-bridge article { min-height: 170px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #d7d4cd; border-radius: 14px; background: var(--ma-card); }
@@ -107,7 +107,7 @@
 .synergy-bridge span { color: var(--ma-muted); font-size: 0.69rem; line-height: 1.45; }
 .synergy-bridge > b { align-self: center; color: var(--ma-muted); font-size: 1.3rem; }
 .synergy-bridge .synergy-positive strong { color: #2e8221; }
-.synergy-bridge .synergy-total { border-color: #c8c4bb; background: var(--ma-panel-strong); }
+.synergy-bridge .synergy-total { border-color: #c7d0da; background: #e2e8ee; }
 .multiple-change { margin-top: 36px; display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
 .multiple-change strong { color: var(--ma-ink); font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); line-height: 0.9; letter-spacing: -0.06em; }
 .multiple-change strong span { color: var(--ma-muted); }
@@ -182,7 +182,7 @@
 .precedent-card > p { grid-column: 1 / -1; max-width: 800px; margin: 0; padding-top: 26px; border-top: 1px solid var(--ma-border); color: var(--ma-muted); line-height: 1.65; }
 .risk-grid { grid-template-columns: repeat(4, 1fr); }
 
-.ma-recommendation { margin-top: 72px; margin-bottom: 72px; padding: clamp(44px, 7vw, 84px); border: 1px solid #d8d5ce; border-top: 5px solid var(--ma-red); border-radius: 22px; background: var(--ma-card); color: var(--ma-ink); box-shadow: 0 24px 62px rgba(23, 23, 23, 0.09); }
+.ma-recommendation { margin-top: 72px; margin-bottom: 72px; padding: clamp(44px, 7vw, 84px); border: 1px solid #d1d8df; border-top: 5px solid #274c77; border-radius: 22px; background: #eef1f4; color: var(--ma-ink); box-shadow: 0 24px 62px rgba(39, 76, 119, 0.1); }
 .ma-recommendation h2 { max-width: 900px; font-size: clamp(3.1rem, 7vw, 6.2rem); text-transform: uppercase; }
 .recommendation-copy { max-width: 880px; margin: 28px 0 0; color: #4f4f4f; line-height: 1.75; }
 .recommendation-metrics { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
