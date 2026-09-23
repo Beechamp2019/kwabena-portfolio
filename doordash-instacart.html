@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260922-33" />
-  <link rel="stylesheet" href="ma-case.css?v=20260923-9" />
+  <link rel="stylesheet" href="ma-case.css?v=20260923-10" />
 </head>
 <body class="ma-case-page">
   <header class="ma-nav">
@@ -64,33 +64,35 @@
       <p class="ma-note">Reported 2025 company figures. DoorDash Marketplace GOV and Instacart GTV are company-defined measures and are not perfectly identical metrics.</p>
     </section>
 
-    <section class="ma-section" id="transaction">
-      <div class="ma-heading"><p class="ma-eyebrow">Transaction Economics</p><h2>What Would DoorDash Pay?</h2><p>Illustrative transaction assumptions based on a $44.41 market reference used for this case—not a fixed current quote.</p></div>
-      <div class="transaction-bridge" aria-label="Illustrative transaction value bridge">
-        <article class="transaction-stage">
-          <span>Reference Price</span><strong>$44.41</strong><small>Instacart Share Price</small>
-        </article>
-        <div class="transaction-connector transaction-premium"><span>+25% acquisition premium</span><i aria-hidden="true"></i></div>
-        <article class="transaction-stage">
-          <span>Offer Price</span><strong>$55.51</strong><small>Per Share</small>
-        </article>
-        <div class="transaction-connector" aria-hidden="true"><i></i></div>
-        <article class="transaction-result">
-          <span>Transaction Value</span>
-          <div class="transaction-equity"><strong>$12.9B</strong><small>Offer Equity Value</small></div>
-          <div class="transaction-ev"><strong>$12.28B</strong><small>Transaction Enterprise Value</small></div>
-          <div class="transaction-multiple"><strong>11.3x</strong><small>EV / Standalone Adjusted EBITDA</small></div>
-        </article>
-      </div>
-    </section>
+    <section class="ma-section transaction-economics" id="transaction">
+      <div class="ma-heading"><p class="ma-eyebrow">Transaction Economics</p><h2>How Synergies Change the Deal</h2><p>At the modeled acquisition price, DoorDash would acquire Instacart at approximately 11.3x standalone adjusted EBITDA. The modeled synergies materially improve the effective transaction multiple.</p></div>
 
-    <section class="ma-section ma-section-dark" id="synergy-bridge">
-      <div class="ma-heading"><p class="ma-eyebrow">Valuation Bridge</p><h2>How Synergies Change the Economics</h2></div>
-      <div class="synergy-bridge" aria-label="Illustrative synergy-adjusted EBITDA bridge">
-        <article><strong>$1.087B</strong><span>Instacart Standalone Adjusted EBITDA</span></article><b>+</b><article class="synergy-positive"><strong>$250M</strong><span>Illustrative Cost Synergies</span></article><b>+</b><article class="synergy-positive"><strong>$70M</strong><span>EBITDA from Revenue Synergies</span></article><b>=</b><article class="synergy-total"><strong>$1.407B</strong><span>Synergy-Adjusted EBITDA</span></article>
+      <dl class="transaction-strip" aria-label="Illustrative transaction assumptions">
+        <div><dt>Reference Price</dt><dd>$44.41</dd></div>
+        <div class="transaction-strip-premium"><dt>Acquisition Premium</dt><dd>+25%</dd></div>
+        <div><dt>Offer Price / Share</dt><dd>$55.51</dd></div>
+        <div><dt>Transaction EV</dt><dd>$12.28B</dd></div>
+      </dl>
+
+      <div class="valuation-visual" aria-label="Synergies increase EBITDA from 1.087 billion dollars to 1.407 billion dollars and reduce the implied acquisition multiple from 11.3 times to 8.7 times">
+        <div class="valuation-multiple valuation-start"><strong>11.3x</strong><span>Standalone EV / EBITDA</span></div>
+        <span class="valuation-arrow" aria-hidden="true">→</span>
+        <div class="valuation-synergies">
+          <p><strong>$320M</strong><span>Total EBITDA Synergies</span></p>
+          <div class="synergy-contributions">
+            <div><strong>+$250M</strong><span>Cost Synergies</span></div>
+            <div><strong>+$70M</strong><span>EBITDA from Revenue Synergies</span></div>
+          </div>
+          <div class="ebitda-logic" aria-label="Standalone EBITDA plus modeled synergies equals synergy-adjusted EBITDA">
+            <span><strong>$1.087B</strong>Standalone EBITDA</span><b>+</b><span><strong>$320M</strong>Modeled Synergies</span><b>=</b><span><strong>$1.407B</strong>Synergy-Adjusted EBITDA</span>
+          </div>
+        </div>
+        <span class="valuation-arrow" aria-hidden="true">→</span>
+        <div class="valuation-multiple valuation-result"><strong>8.7x</strong><span>Synergy-Adjusted EV / EBITDA</span></div>
       </div>
-      <div class="multiple-change"><strong><span class="multiple-start">11.1x</span> <span class="multiple-arrow">→</span> <span class="multiple-result">8.5x</span></strong><p>Standalone EV / EBITDA <span>→</span> Synergy-Adjusted EV / EBITDA</p></div>
-      <p class="ma-note">Illustrative modeling assumptions. Synergy estimates do not represent DoorDash or Instacart guidance.</p>
+
+      <p class="valuation-takeaway">$320M of modeled annual EBITDA synergies increases Instacart's effective EBITDA contribution from $1.087B to $1.407B, reducing the implied acquisition multiple from approximately 11.3x to 8.7x.</p>
+      <p class="valuation-disclosure">Illustrative modeling assumptions. Synergy estimates do not represent DoorDash or Instacart guidance.</p>
     </section>
 
     <section class="ma-section" id="synergies">
