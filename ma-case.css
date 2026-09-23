@@ -93,10 +93,11 @@
 .company-table tbody td:nth-child(2) { color: var(--ma-red); }
 .company-table tbody td:nth-child(3) { color: #2e8221; }
 .company-table small { display: block; margin-top: 3px; color: var(--ma-muted); font-family: var(--font-body); font-size: 0.66rem; font-weight: 500; }
-.combined-metrics { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.combined-metrics article { padding: 28px; border: 1px solid #303030; border-radius: 16px; background: #171717; box-shadow: 0 14px 32px rgba(23, 23, 23, 0.12); }
-.combined-metrics strong { display: block; color: #fff; font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1; letter-spacing: -0.05em; }
-.combined-metrics span { display: block; margin-top: 12px; color: #aaa; font-size: 0.75rem; }
+.combined-metrics { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid #d7dce2; border-bottom: 1px solid #d7dce2; background: transparent; }
+.combined-metrics article { padding: 28px; background: transparent; }
+.combined-metrics article + article { border-left: 1px solid #d7dce2; }
+.combined-metrics strong { display: block; color: #171717; font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1; letter-spacing: -0.05em; }
+.combined-metrics span { display: block; margin-top: 12px; color: #667085; font-size: 0.75rem; }
 .ma-note { margin: 18px 0 0; color: var(--ma-muted); font-size: 0.7rem; line-height: 1.65; }
 
 .transaction-economics { position:relative; isolation:isolate; border:0; }
@@ -125,9 +126,9 @@
 .ebitda-logic span { font-size:.63rem; line-height:1.35; }
 .ebitda-logic strong { display:block; color:#171717; font-family:var(--font-display); font-size:1.05rem; }
 .ebitda-logic b { color:#2e8b2d; }
-.valuation-result { padding:30px; border-top:4px solid #ff3008; border-radius:14px; background:#171717; }
+.valuation-result { padding:30px; border:1px solid #bdd7b6; border-top:3px solid #ff3008; border-radius:14px; background:#e7f0e4; }
 .valuation-result strong { color:#2e8b2d; }
-.valuation-result span { color:#e2e4e8; }
+.valuation-result span { color:#3f4a3d; }
 .valuation-takeaway { max-width:940px; margin:30px 0 0; padding-left:18px; border-left:3px solid #2e8b2d; color:#171717; line-height:1.7; }
 .valuation-disclosure { margin:14px 0 0; color:#667085; font-size:.68rem; }
 
@@ -259,6 +260,7 @@
   .ma-section { padding: 78px 0; }
   .ma-section-tint::before, .transaction-economics::before { inset-inline: -20px; }
   .combined-metrics, .synergy-cards, .risk-grid, .recommendation-metrics { grid-template-columns: 1fr; }
+  .combined-metrics article + article { border-top: 1px solid #d7dce2; border-left: 0; }
   .transaction-strip div { padding: 18px 15px; }
   .synergy-contributions { grid-template-columns: 1fr; }
   .ebitda-logic { align-items: stretch; flex-direction: column; text-align: center; }
