@@ -8,9 +8,8 @@
 .olist-hero h1 { max-width:900px; margin:0; font-family:var(--font-display); font-size:clamp(3.2rem,7.5vw,6.5rem); line-height:.96; letter-spacing:-.06em; }
 .olist-hero h2 { max-width:780px; margin:24px 0 0; color:var(--olist-teal); font-family:var(--font-display); font-size:clamp(1.45rem,3vw,2.3rem); line-height:1.12; letter-spacing:-.035em; }
 .olist-lede { max-width:760px; margin:20px 0 0; color:var(--olist-muted); line-height:1.7; }
-.olist-tags,.olist-skills { margin-top:25px; display:flex; flex-wrap:wrap; gap:8px; }
-.olist-tags span,.olist-skills span { padding:8px 12px; border:1px solid var(--olist-border); border-radius:999px; background:#fff; color:#334155; font-size:.72rem; font-weight:700; }
-.olist-dataset-note { margin:18px 0 0; color:var(--olist-muted); font-size:.75rem; }.olist-dataset-note span{padding:0 5px;color:var(--olist-blue)}
+.olist-skills { margin-top:25px; display:flex; flex-wrap:wrap; gap:8px; }
+.olist-skills span { padding:8px 12px; border:1px solid var(--olist-border); border-radius:999px; background:#fff; color:#334155; font-size:.72rem; font-weight:700; }
 .olist-section { padding:82px 0; border-top:1px solid var(--olist-border); }
 .olist-heading h2 { max-width:850px; margin:0; font-family:var(--font-display); font-size:clamp(2.35rem,5.2vw,4.6rem); line-height:1; letter-spacing:-.055em; }
 .olist-metrics-section { padding-top:54px; }
