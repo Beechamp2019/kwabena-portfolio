@@ -177,16 +177,16 @@
 .precedent-card > p { grid-column: 1 / -1; max-width: 800px; margin: 0; padding-top: 26px; border-top: 1px solid var(--ma-border); color: var(--ma-muted); line-height: 1.65; }
 .risk-grid { grid-template-columns: repeat(4, 1fr); }
 
-.ma-recommendation { margin-top: 72px; margin-bottom: 72px; padding: clamp(44px, 7vw, 84px); border: 1px solid #d4d0c8; border-radius: 22px; background: var(--ma-panel-strong); color: var(--ma-ink); }
+.ma-recommendation { margin-top: 72px; margin-bottom: 72px; padding: clamp(44px, 7vw, 84px); border: 1px solid #d8d5ce; border-top: 5px solid var(--ma-red); border-radius: 22px; background: var(--ma-card); color: var(--ma-ink); box-shadow: 0 24px 62px rgba(23, 23, 23, 0.09); }
 .ma-recommendation h2 { max-width: 900px; font-size: clamp(3.1rem, 7vw, 6.2rem); text-transform: uppercase; }
-.recommendation-copy { max-width: 880px; margin: 28px 0 0; color: var(--ma-muted); line-height: 1.75; }
+.recommendation-copy { max-width: 880px; margin: 28px 0 0; color: #4f4f4f; line-height: 1.75; }
 .recommendation-metrics { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .recommendation-metrics article { padding: 24px 0; border-top: 1px solid #c9c5bd; }
 .recommendation-metrics strong { display: block; color: var(--ma-ink); font-family: var(--font-display); font-size: clamp(2.6rem, 5vw, 4.2rem); line-height: 1; }
 .recommendation-metrics span { display: block; margin-top: 10px; color: var(--ma-muted); font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
 .ma-recommendation ol { margin: 34px 0 0; padding: 0; list-style: none; counter-reset: rationale; }
-.ma-recommendation li { padding: 16px 0; display: grid; grid-template-columns: 38px 1fr; gap: 12px; border-top: 1px solid #c9c5bd; color: var(--ma-ink); counter-increment: rationale; }
-.ma-recommendation li::before { color: var(--ma-ink); font-weight: 800; content: "0" counter(rationale); }
+.ma-recommendation li { min-height: 68px; padding: 16px 0; display: grid; grid-template-columns: 40px 1fr; align-items: center; gap: 14px; border-top: 1px solid #d8d5ce; color: var(--ma-ink); counter-increment: rationale; }
+.ma-recommendation li::before { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--ma-red); color: #fff; font-size: 0.66rem; font-weight: 800; line-height: 1; content: "0" counter(rationale); }
 
 .ma-takeaway { padding: 95px 0; }
 .ma-takeaway h2 { max-width: 850px; }
