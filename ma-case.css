@@ -63,7 +63,22 @@
 .company-block ul { margin: 0; padding: 0; list-style: none; color: var(--ma-muted); font-size: 0.8rem; line-height: 1.85; }
 .company-block-dash { border-top: 4px solid var(--ma-red); }
 .company-block-cart { border-top: 4px solid var(--ma-green); }
-.company-block-combined { background: var(--ma-panel-strong); color: var(--ma-ink); border-color: #d4d0c8; }
+.company-block-combined {
+  position: relative;
+  overflow: hidden;
+  border-color: #dddfe2;
+  background: linear-gradient(135deg, #fff4f1 0%, #f7f7f5 48%, #f1f8ee 100%);
+  color: var(--ma-ink);
+}
+.company-block-combined::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff3008 0%, #ff3008 50%, #43b02a 50%, #43b02a 100%);
+  content: "";
+}
 .company-block-combined > p { color: var(--ma-ink); }
 .company-block-combined ul { color: var(--ma-muted); }
 .deal-operator { align-self: center; color: var(--ma-ink); font-family: var(--font-display); font-size: 1.65rem; }
