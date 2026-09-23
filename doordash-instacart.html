@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260922-33" />
-  <link rel="stylesheet" href="ma-case.css?v=20260922-2" />
+  <link rel="stylesheet" href="ma-case.css?v=20260922-3" />
 </head>
 <body class="ma-case-page">
   <header class="ma-nav">
@@ -98,17 +98,40 @@
             <caption>Synergy-Adjusted EV / EBITDA</caption>
             <thead><tr><th scope="col">Annual EBITDA<br />Synergies</th><th scope="col">15%</th><th scope="col">20%</th><th scope="col">25%</th><th scope="col">30%</th><th scope="col">35%</th></tr></thead>
             <tbody>
-              <tr><th scope="row">$150M</th><td class="heat-mid">8.9x</td><td class="heat-mid">9.3x</td><td class="heat-high">9.7x</td><td class="heat-high">10.1x</td><td class="heat-high">10.5x</td></tr>
-              <tr><th scope="row">$250M</th><td class="heat-low">8.2x</td><td class="heat-mid">8.6x</td><td class="heat-mid">9.0x</td><td class="heat-mid">9.4x</td><td class="heat-high">9.8x</td></tr>
-              <tr><th scope="row">$320M</th><td class="heat-low">7.8x</td><td class="heat-low">8.2x</td><td class="heat-mid base-cell">8.5x</td><td class="heat-mid">8.9x</td><td class="heat-mid">9.3x</td></tr>
-              <tr><th scope="row">$400M</th><td class="heat-low">7.4x</td><td class="heat-low">7.7x</td><td class="heat-low">8.1x</td><td class="heat-mid">8.4x</td><td class="heat-mid">8.8x</td></tr>
-              <tr><th scope="row">$550M</th><td class="heat-low">6.7x</td><td class="heat-low">7.0x</td><td class="heat-low">7.3x</td><td class="heat-low">7.7x</td><td class="heat-low">8.0x</td></tr>
+              <tr><th scope="row">$150M</th><td class="heat-mid" data-premium="15" data-synergy="150">8.9x</td><td class="heat-mid" data-premium="20" data-synergy="150">9.3x</td><td class="heat-high" data-premium="25" data-synergy="150">9.7x</td><td class="heat-high" data-premium="30" data-synergy="150">10.1x</td><td class="heat-high" data-premium="35" data-synergy="150">10.5x</td></tr>
+              <tr><th scope="row">$250M</th><td class="heat-low" data-premium="15" data-synergy="250">8.2x</td><td class="heat-mid" data-premium="20" data-synergy="250">8.6x</td><td class="heat-mid" data-premium="25" data-synergy="250">9.0x</td><td class="heat-mid" data-premium="30" data-synergy="250">9.4x</td><td class="heat-high" data-premium="35" data-synergy="250">9.8x</td></tr>
+              <tr><th scope="row">$320M</th><td class="heat-low" data-premium="15" data-synergy="320">7.8x</td><td class="heat-low" data-premium="20" data-synergy="320">8.2x</td><td class="heat-mid selected-cell" data-premium="25" data-synergy="320" aria-current="true">8.5x</td><td class="heat-mid" data-premium="30" data-synergy="320">8.9x</td><td class="heat-mid" data-premium="35" data-synergy="320">9.3x</td></tr>
+              <tr><th scope="row">$400M</th><td class="heat-low" data-premium="15" data-synergy="400">7.4x</td><td class="heat-low" data-premium="20" data-synergy="400">7.7x</td><td class="heat-low" data-premium="25" data-synergy="400">8.1x</td><td class="heat-mid" data-premium="30" data-synergy="400">8.4x</td><td class="heat-mid" data-premium="35" data-synergy="400">8.8x</td></tr>
+              <tr><th scope="row">$550M</th><td class="heat-low" data-premium="15" data-synergy="550">6.7x</td><td class="heat-low" data-premium="20" data-synergy="550">7.0x</td><td class="heat-low" data-premium="25" data-synergy="550">7.3x</td><td class="heat-low" data-premium="30" data-synergy="550">7.7x</td><td class="heat-low" data-premium="35" data-synergy="550">8.0x</td></tr>
             </tbody>
           </table>
         </div>
-        <aside class="base-case"><p>Base Case</p><dl><div><dt>Acquisition Premium</dt><dd>25%</dd></div><div><dt>Annual EBITDA Synergies</dt><dd>$320M</dd></div><div><dt>Effective EV / EBITDA</dt><dd>8.5x</dd></div></dl></aside>
+        <aside class="live-scenario" aria-labelledby="live-scenario-heading">
+          <p class="live-scenario-label" id="live-scenario-heading">Live Deal Scenario</p>
+          <div class="scenario-control">
+            <div class="scenario-control-head"><label for="premium-slider">Acquisition Premium</label><output id="premium-value" for="premium-slider">25%</output></div>
+            <input id="premium-slider" type="range" min="15" max="35" step="1" value="25" aria-valuemin="15" aria-valuemax="35" aria-valuenow="25" />
+            <div class="range-limits"><span>15%</span><span>35%</span></div>
+          </div>
+          <div class="scenario-control">
+            <div class="scenario-control-head"><label for="synergy-slider">Annual EBITDA Synergies</label><output id="synergy-value" for="synergy-slider">$320M</output></div>
+            <input id="synergy-slider" type="range" min="150" max="550" step="10" value="320" aria-valuemin="150" aria-valuemax="550" aria-valuenow="320" />
+            <div class="range-limits"><span>$150M</span><span>$550M</span></div>
+          </div>
+          <div class="scenario-results" aria-live="polite" aria-atomic="true">
+            <div class="scenario-primary"><span>Effective EV / EBITDA</span><strong id="effective-multiple">8.7x</strong></div>
+            <div class="valuation-status"><span>Illustrative valuation framework</span><strong id="valuation-indicator">ACCEPTABLE</strong></div>
+            <dl>
+              <div><dt>Offer Price / Share</dt><dd id="offer-price">$55.51</dd></div>
+              <div><dt>Offer Equity Value</dt><dd id="offer-equity">$12.85B</dd></div>
+              <div><dt>Transaction Enterprise Value</dt><dd id="transaction-ev">$12.28B</dd></div>
+              <div><dt>Synergy-Adjusted EBITDA</dt><dd id="adjusted-ebitda">$1.407B</dd></div>
+            </dl>
+          </div>
+          <button class="scenario-reset" id="scenario-reset" type="button">Reset to Base Case</button>
+        </aside>
       </div>
-      <p class="sensitivity-takeaway">At a 25% acquisition premium, approximately $320M of annual EBITDA synergies reduces the effective acquisition multiple from roughly 11.1x standalone EBITDA to approximately 8.5x synergy-adjusted EBITDA.</p>
+      <p class="sensitivity-takeaway" id="sensitivity-takeaway" aria-live="polite">At a 25% acquisition premium and $320M of annual EBITDA synergies, the transaction implies approximately 8.7x synergy-adjusted EV / EBITDA.</p>
     </section>
 
     <section class="ma-section" id="precedent">
@@ -152,5 +175,6 @@
     <nav class="ma-project-nav" aria-label="Case study navigation"><a href="netflix-sports.html"><span>Previous case study</span><strong>Netflix Sports Strategy</strong><b aria-hidden="true">←</b></a><a href="index.html#work"><span>Portfolio</span><strong>Back to Business Cases</strong><b aria-hidden="true">↑</b></a></nav>
   </main>
   <footer class="ma-footer"><span>Kwabena Adu Darko-Asare</span><a href="index.html#work">Back to portfolio ↑</a></footer>
+  <script src="ma-case.js?v=20260922-1"></script>
 </body>
 </html>
