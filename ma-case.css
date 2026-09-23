@@ -39,7 +39,7 @@
 .ma-tags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
 .ma-tags span { padding: 7px 12px; border: 1px solid var(--ma-border); border-radius: 999px; background: var(--ma-card); font-size: 0.72rem; font-weight: 700; }
 .ma-disclosure { margin: 20px 0 0; color: var(--ma-muted); font-size: 0.72rem; }
-.ma-verdict { padding: 32px; border: 1px solid #d8d5ce; border-radius: 20px; background: var(--ma-panel); color: var(--ma-ink); box-shadow: 0 22px 55px rgba(23, 23, 23, 0.08); }
+.ma-verdict { padding: 32px; border: 1px solid #efb6a7; border-top: 5px solid var(--ma-red); border-radius: 20px; background: #ffe1d8; color: var(--ma-ink); box-shadow: 0 22px 55px rgba(255, 48, 8, 0.12); }
 .ma-verdict > p { margin: 0 0 14px; color: var(--ma-ink); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
 .ma-verdict > strong { display: block; font-family: var(--font-display); font-size: clamp(2rem, 3.7vw, 3.2rem); line-height: 0.98; letter-spacing: -0.055em; text-transform: uppercase; }
 .ma-verdict dl { margin: 34px 0 0; }
