@@ -29,7 +29,7 @@
 .ma-nav { padding: 27px 0; display: flex; justify-content: space-between; gap: 24px; }
 .ma-nav a { color: var(--ma-ink); font-size: 0.78rem; font-weight: 700; text-decoration: none; }
 .ma-nav a:last-child { color: var(--ma-ink); }
-.ma-eyebrow { margin: 0 0 16px; color: var(--ma-ink); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.17em; text-transform: uppercase; }
+.ma-eyebrow { margin: 0 0 16px; color: #40566f; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.17em; text-transform: uppercase; }
 
 .ma-hero { min-height: 680px; padding: 92px 0 110px; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.55fr); align-items: center; gap: clamp(48px, 7vw, 94px); }
 .ma-hero h1 { margin: 0; font-family: var(--font-display); font-size: clamp(4rem, 8.6vw, 7.7rem); line-height: 0.9; letter-spacing: -0.07em; }
