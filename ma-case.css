@@ -37,8 +37,8 @@
 .ma-hero h2 { max-width: 760px; margin: 30px 0 0; font-family: var(--font-display); font-size: clamp(1.55rem, 3vw, 2.55rem); line-height: 1.1; letter-spacing: -0.04em; }
 .ma-lede { max-width: 720px; margin: 22px 0 0; color: var(--ma-muted); font-size: 1rem; line-height: 1.75; }
 .ma-tags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
-.ma-tags span { padding: 7px 12px; border: 1px solid var(--ma-border); border-radius: 999px; background: var(--ma-card); font-size: 0.72rem; font-weight: 700; }
-.ma-disclosure { margin: 20px 0 0; color: var(--ma-muted); font-size: 0.72rem; }
+.ma-tags span { padding: 7px 12px; border: 1px solid #d5dce5; border-radius: 999px; background: var(--ma-card); color: #40566f; font-size: 0.78rem; font-weight: 700; }
+.ma-disclosure { margin: 20px 0 0; color: #274c77; font-size: 0.72rem; }
 .ma-verdict { padding: 32px; border: 1px solid #d1d8df; border-top: 5px solid #274c77; border-radius: 20px; background: #eef1f4; color: var(--ma-ink); box-shadow: 0 22px 55px rgba(39, 76, 119, 0.11); }
 .ma-verdict > p { margin: 0 0 14px; color: var(--ma-ink); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
 .ma-verdict > strong { display: block; font-family: var(--font-display); font-size: clamp(2rem, 3.7vw, 3.2rem); line-height: 0.98; letter-spacing: -0.055em; text-transform: uppercase; }
