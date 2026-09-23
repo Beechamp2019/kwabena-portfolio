@@ -96,7 +96,7 @@
 .combined-metrics { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid #d7dce2; border-bottom: 1px solid #d7dce2; background: transparent; }
 .combined-metrics article { padding: 28px; background: transparent; }
 .combined-metrics article + article { border-left: 1px solid #d7dce2; }
-.combined-metrics strong { display: block; color: #171717; font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1; letter-spacing: -0.05em; }
+.combined-metrics strong { display: block; color: #274c77; font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1; letter-spacing: -0.05em; }
 .combined-metrics span { display: block; margin-top: 12px; color: #667085; font-size: 0.75rem; }
 .ma-note { margin: 18px 0 0; color: var(--ma-muted); font-size: 0.7rem; line-height: 1.65; }
 
