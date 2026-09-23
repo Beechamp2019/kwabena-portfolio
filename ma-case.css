@@ -101,19 +101,20 @@
 .ma-section-dark { position: relative; border: 0; color: var(--ma-ink); }
 .ma-section-dark::before { position: absolute; z-index: -1; inset: 0 calc((100vw - min(var(--ma-max), calc(100vw - 64px))) / -2); background: #eef1f4; content: ""; }
 .ma-section-dark .ma-heading h2 { color: var(--ma-ink); }
+.ma-section-dark .ma-eyebrow { color: #274c77; }
 .synergy-bridge { margin-top: 50px; display: grid; grid-template-columns: 1.15fr auto 0.9fr auto 0.9fr auto 1.15fr; align-items: stretch; gap: 12px; }
 .synergy-bridge article { min-height: 170px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #d7d4cd; border-radius: 14px; background: var(--ma-card); }
 .synergy-bridge strong { color: var(--ma-ink); font-family: var(--font-display); font-size: clamp(1.8rem, 3.8vw, 3rem); line-height: 1; letter-spacing: -0.05em; }
-.synergy-bridge span { color: var(--ma-muted); font-size: 0.69rem; line-height: 1.45; }
-.synergy-bridge > b { align-self: center; color: var(--ma-muted); font-size: 1.3rem; }
+.synergy-bridge span { color: #3f4852; font-size: 0.69rem; line-height: 1.45; }
+.synergy-bridge > b { align-self: center; color: #274c77; font-size: 1.3rem; }
 .synergy-bridge .synergy-positive strong { color: #2e8221; }
 .synergy-bridge .synergy-total { border-color: #c7d0da; background: #e2e8ee; }
 .multiple-change { margin-top: 36px; display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
 .multiple-change strong { color: var(--ma-ink); font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); line-height: 0.9; letter-spacing: -0.06em; }
-.multiple-change strong span { color: var(--ma-muted); }
-.multiple-change p { max-width: 330px; margin: 0; color: var(--ma-muted); font-size: 0.76rem; text-align: right; }
-.multiple-change p span { padding: 0 6px; color: var(--ma-ink); }
-.ma-section-dark .ma-note { color: var(--ma-muted); }
+.multiple-change strong span { color: #274c77; }
+.multiple-change p { max-width: 330px; margin: 0; color: #485563; font-size: 0.76rem; text-align: right; }
+.multiple-change p span { padding: 0 6px; color: #274c77; }
+.ma-section-dark .ma-note { color: #59636e; }
 
 .synergy-cards, .risk-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .synergy-cards article, .risk-grid article { padding: 28px; border: 1px solid var(--ma-border); border-radius: 16px; background: var(--ma-card); }
