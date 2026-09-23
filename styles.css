@@ -6,8 +6,8 @@
   --text: #f6f4f0;
   --text-dim: #a8a49c;
   --text-faint: #6b675f;
-  --accent: #f0592a;
-  --accent-soft: rgba(240, 89, 42, 0.14);
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.14);
   --radius: 14px;
   --max-width: 1080px;
   --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
@@ -75,7 +75,7 @@ a { color: inherit; }
 .nav-social a {
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(240, 89, 42, 0.5);
+  border: 1px solid rgba(37, 99, 235, 0.5);
   border-radius: 50%;
   background: var(--accent-soft);
   color: var(--accent);
@@ -91,7 +91,7 @@ a { color: inherit; }
   background: var(--accent);
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 0 0 6px rgba(240, 89, 42, 0.12);
+  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.12);
 }
 /* HERO */
 .hero {
@@ -108,8 +108,8 @@ a { color: inherit; }
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(240, 89, 42, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(240, 89, 42, 0.25) 1px, transparent 1px);
+    linear-gradient(rgba(37, 99, 235, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.25) 1px, transparent 1px);
   background-size: 38px 38px;
   mask-image: linear-gradient(to bottom, transparent 2%, #000 18%, #000 88%, transparent 100%);
   animation:
@@ -123,7 +123,7 @@ a { color: inherit; }
   z-index: 0;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at 78% 58%, rgba(240, 89, 42, 0.16), transparent 38%);
+  background: radial-gradient(circle at 78% 58%, rgba(37, 99, 235, 0.16), transparent 38%);
   animation: hero-grid-glow 7s ease-in-out infinite alternate;
 }
 .hero-light-sweep {
@@ -131,7 +131,7 @@ a { color: inherit; }
   z-index: 0;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(105deg, transparent 32%, rgba(240, 89, 42, 0.13) 49%, transparent 66%);
+  background: linear-gradient(105deg, transparent 32%, rgba(37, 99, 235, 0.13) 49%, transparent 66%);
   transform: translateX(-115%);
   animation: hero-light-sweep 1.35s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
 }
@@ -201,14 +201,14 @@ a { color: inherit; }
   max-width: 440px;
   height: auto;
   display: block;
-  filter: drop-shadow(0 0 18px rgba(240, 89, 42, 0.14));
+  filter: drop-shadow(0 0 18px rgba(37, 99, 235, 0.14));
   border-radius: 12px 12px 0 0;
   transform: translate3d(var(--portrait-x), calc(var(--portrait-y) + var(--portrait-hover)), 0);
   transition: transform 0.35s ease, filter 0.35s ease;
 }
 .hero-photo-wrap:hover .hero-photo {
   --portrait-hover: -4px;
-  filter: drop-shadow(0 8px 24px rgba(240, 89, 42, 0.24));
+  filter: drop-shadow(0 8px 24px rgba(37, 99, 235, 0.24));
 }
 
 @keyframes hero-grid-enter {
@@ -506,8 +506,8 @@ a { color: inherit; }
 }
 .research-project-card:hover {
   translate: 0 -6px;
-  border-color: rgba(240, 89, 42, 0.52);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(240, 89, 42, 0.08);
+  border-color: rgba(37, 99, 235, 0.52);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(37, 99, 235, 0.08);
 }
 .research-project-visual {
   min-height: 300px;
@@ -713,8 +713,8 @@ a { color: inherit; }
 }
 .project-card:hover {
   translate: 0 -6px;
-  border-color: rgba(240, 89, 42, 0.52);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(240, 89, 42, 0.08);
+  border-color: rgba(37, 99, 235, 0.52);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(37, 99, 235, 0.08);
 }
 .project-thumb {
   position: relative;
@@ -774,7 +774,7 @@ a { color: inherit; }
 }
 .project-card:hover .project-arrow {
   transform: translate(4px, -4px);
-  color: #ff744b;
+  color: #60a5fa;
 }
 .project-card:hover .project-arrow svg { transform: translate(1px, -1px); }
 .project-body { padding: 22px; }
