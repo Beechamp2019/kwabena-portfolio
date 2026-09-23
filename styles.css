@@ -20,7 +20,9 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: linear-gradient(90deg, #0f0f0e 0%, #191816 48%, var(--bg-hero) 100%);
+  background:
+    radial-gradient(circle at 88% 42%, rgba(37, 99, 235, 0.28), transparent 52%),
+    linear-gradient(90deg, #080a0f 0%, #0d1322 52%, #102752 100%);
   background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-body);
