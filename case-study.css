@@ -638,7 +638,11 @@
   font-weight: 700;
 }
 
-.case-lessons { border-top: 1px solid var(--border); }
+.case-lessons, .case-business-plan { border-top: 1px solid var(--border); }
+.case-business-plan-list { margin: 0; padding: 0; list-style: none; counter-reset: business-plan; }
+.case-business-plan-list li { position: relative; min-height: 58px; padding: 18px 0 18px 60px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 1rem; line-height: 1.65; counter-increment: business-plan; }
+.case-business-plan-list li:last-child { border-bottom: 1px solid var(--border); }
+.case-business-plan-list li::before { position: absolute; top: 16px; left: 0; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--case-coral); color: #171613; font-size: 0.72rem; font-weight: 800; line-height: 1; content: "0" counter(business-plan); }
 .case-next {
   margin-top: 30px;
   margin-bottom: 90px;
