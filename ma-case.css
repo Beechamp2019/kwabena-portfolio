@@ -126,7 +126,7 @@
 .ebitda-logic span { font-size:.63rem; line-height:1.35; }
 .ebitda-logic strong { display:block; color:#171717; font-family:var(--font-display); font-size:1.05rem; }
 .ebitda-logic b { color:#2e8b2d; }
-.valuation-result { padding:30px; border:1px solid #bdd7b6; border-top:3px solid #ff3008; border-radius:14px; background:#e7f0e4; }
+.valuation-result { padding:30px; border:1px solid #bdd7b6; border-top:3px solid #ff3008; border-radius:14px; background:#eef1f4; }
 .valuation-result strong { color:#2e8b2d; }
 .valuation-result span { color:#3f4a3d; }
 .valuation-takeaway { max-width:940px; margin:30px 0 0; padding-left:18px; border-left:3px solid #2e8b2d; color:#171717; line-height:1.7; }
