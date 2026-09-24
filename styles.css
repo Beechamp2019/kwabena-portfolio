@@ -588,7 +588,7 @@ a { color: inherit; }
   display: grid;
   gap: 24px;
 }
-.business-case-card-ma { border-color: rgba(255, 48, 8, 0.32); }
+.business-case-card-ma { border-color: rgba(47, 111, 237, 0.32); }
 .business-case-card.business-case-card-ma:hover { border-color: rgba(47, 111, 237, 0.65); }
 .business-case-visual-ma {
   grid-template-columns: 1fr auto 1fr;
@@ -617,7 +617,7 @@ a { color: inherit; }
 .ma-brand-instacart { background: #43b02a; }
 .ma-combine { position: relative; z-index: 2; color: #fff; font-size: 1.4rem; font-weight: 700; }
 .business-case-card-ma .project-kicker,
-.business-case-card-ma .research-project-link { color: #ff4b26; }
+.business-case-card-ma .research-project-link { color: #2563eb; }
 .business-case-card:hover {
   translate: 0 -6px;
   border-color: rgba(47, 111, 237, 0.65);
@@ -672,7 +672,7 @@ a { color: inherit; }
   flex-direction: column;
   justify-content: center;
 }
-.business-case-copy .project-kicker { color: #e50914; }
+.business-case-copy .project-kicker { color: #2563eb; }
 .business-case-copy h3 {
   margin: 8px 0 8px;
   font-family: var(--font-display);
@@ -695,7 +695,7 @@ a { color: inherit; }
   font-weight: 600;
 }
 .business-case-copy .project-tech { margin-top: 14px; padding-right: 0; }
-.business-case-copy .research-project-link { margin-top: 18px; color: #e50914; }
+.business-case-copy .research-project-link { margin-top: 18px; color: #2563eb; }
 .business-case-card:hover .research-project-link span { transform: translateX(5px); }
 .projects-grid {
   display: grid;
