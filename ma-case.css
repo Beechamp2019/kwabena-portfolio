@@ -6,6 +6,7 @@
   --ma-border: #e5e5e5;
   --ma-red: #ff3008;
   --ma-green: #43b02a;
+  --ma-deep-blue: #0a2342;
   --ma-dark: #171717;
   --ma-panel: #f3f0df;
   --ma-panel-strong: #ede8d0;
@@ -101,7 +102,7 @@
 .combined-metrics { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid #d7dce2; border-bottom: 1px solid #d7dce2; background: transparent; }
 .combined-metrics article { padding: 28px; background: transparent; }
 .combined-metrics article + article { border-left: 1px solid #d7dce2; }
-.combined-metrics strong { display: block; color: #274c77; font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1; letter-spacing: -0.05em; }
+.combined-metrics strong { display: block; color: var(--ma-deep-blue); font-family: var(--font-display); font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1; letter-spacing: -0.05em; }
 .combined-metrics span { display: block; margin-top: 12px; color: #667085; font-size: 0.75rem; }
 .ma-note { margin: 18px 0 0; color: var(--ma-muted); font-size: 0.7rem; line-height: 1.65; }
 
@@ -114,7 +115,7 @@
 
 .transaction-economics { position:relative; isolation:isolate; border:0; }
 .transaction-economics::before { position:absolute; z-index:-1; inset:0 calc((100vw - min(var(--ma-max), calc(100vw - 64px))) / -2); background:#f5f6f7; content:""; }
-.transaction-economics .ma-eyebrow { color:#ff3008; }
+.transaction-economics .ma-eyebrow { color:var(--ma-deep-blue); }
 .transaction-economics .ma-heading > p:last-child { color:#667085; }
 .transaction-strip { margin:42px 0 0; display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #e2e4e8; border-bottom:1px solid #e2e4e8; }
 .transaction-strip div { padding:22px 26px; }
@@ -123,7 +124,7 @@
 .transaction-strip dd { margin:8px 0 0; color:#171717; font-family:var(--font-display); font-size:clamp(1.55rem,3vw,2.35rem); font-weight:700; line-height:1; letter-spacing:-.045em; }
 .transaction-strip .transaction-strip-premium dd { color:#ff3008; }
 .valuation-visual { margin-top:48px; padding:42px 0; display:grid; grid-template-columns:.58fr auto 1.35fr auto .72fr; align-items:center; gap:26px; border-top:1px solid #e2e4e8; border-bottom:1px solid #e2e4e8; }
-.valuation-multiple strong { display:block; color:#171717; font-family:var(--font-display); font-size:clamp(4rem,7vw,6.4rem); line-height:.85; letter-spacing:-.07em; }
+.valuation-multiple strong { display:block; color:var(--ma-deep-blue); font-family:var(--font-display); font-size:clamp(4rem,7vw,6.4rem); line-height:.85; letter-spacing:-.07em; }
 .valuation-multiple span { max-width:170px; margin-top:16px; display:block; color:#667085; font-size:.72rem; font-weight:700; line-height:1.45; }
 .valuation-arrow { color:#ff3008; font-size:1.65rem; }
 .valuation-synergies { padding:0 30px; border-right:1px solid #e2e4e8; border-left:1px solid #e2e4e8; }
@@ -138,15 +139,16 @@
 .ebitda-logic span { font-size:.63rem; line-height:1.35; }
 .ebitda-logic strong { display:block; color:#171717; font-family:var(--font-display); font-size:1.05rem; }
 .ebitda-logic b { color:#2e8b2d; }
-.valuation-result { padding:30px; border:1px solid #bdd7b6; border-top:3px solid #ff3008; border-radius:14px; background:#eef1f4; }
-.valuation-result strong { color:#2e8b2d; }
-.valuation-result span { color:#3f4a3d; }
+.valuation-result { padding:30px; border:1px solid #aebfd2; border-top:3px solid var(--ma-deep-blue); border-radius:14px; background:#dce8f5; }
+.valuation-result strong { color:var(--ma-deep-blue); }
+.valuation-result span { color:#33475f; }
 .valuation-takeaway { max-width:940px; margin:30px 0 0; padding-left:18px; border-left:3px solid #2e8b2d; color:#171717; line-height:1.7; }
 .valuation-disclosure { margin:14px 0 0; color:#667085; font-size:.68rem; }
 
 .synergy-cards, .risk-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .synergy-cards article, .risk-grid article { padding: 28px; border: 1px solid var(--ma-border); border-radius: 16px; background: var(--ma-card); }
 .synergy-cards article > span, .risk-grid article > span { color: var(--ma-ink); font-size: 0.7rem; font-weight: 800; }
+.synergy-cards article > span { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--ma-deep-blue); color: #fff; line-height: 1; }
 .synergy-cards h3, .risk-grid h3 { margin: 20px 0 10px; font-family: var(--font-display); font-size: 1.25rem; }
 .synergy-cards p, .risk-grid p { margin: 0; color: var(--ma-muted); font-size: 0.79rem; line-height: 1.7; }
 
