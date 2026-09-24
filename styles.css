@@ -195,7 +195,7 @@ a { color: inherit; }
   position: absolute;
   z-index: 2;
   top: -76px;
-  right: 312px;
+  right: 22px;
   width: 128px;
   min-height: 68px;
   display: flex;
@@ -206,7 +206,7 @@ a { color: inherit; }
 }
 .hero-graduation-note svg { width: 28px; height: 28px; margin-bottom: 7px; fill: none; stroke: #2f6fed; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .hero-graduation-note svg circle { fill: #2f6fed; stroke: none; }
-.hero-graduation-note span { color: #2f6fed; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.hero-graduation-note span { color: #2f6fed; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; }
 .hero-graduation-note strong { margin-top: 3px; color: #e8e6e1; font-size: 0.79rem; font-weight: 500; white-space: nowrap; }
 .hero-photo {
   --portrait-x: 0px;
@@ -986,7 +986,7 @@ a { color: inherit; }
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-photo-wrap { left: 86px; display: grid; grid-template-columns: minmax(0, 300px); justify-content: flex-end; order: -1; }
-  .hero-graduation-note { position: static; grid-row: 1; width: 118px; min-height: 0; margin-bottom: 16px; justify-self: start; }
+  .hero-graduation-note { position: static; grid-row: 1; width: 128px; min-height: 0; margin-bottom: 16px; justify-self: end; }
   .hero-graduation-note svg { width: 26px; height: 26px; }
   .hero-graduation-note span { font-size: 0.56rem; }
   .hero-graduation-note strong { font-size: 0.74rem; }
