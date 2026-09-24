@@ -812,6 +812,7 @@ a { color: inherit; }
   margin: 0 0 10px;
   font-size: 1.15rem;
 }
+.project-card-featured .project-body h3 { color: #2563eb; }
 .project-body p {
   color: var(--text-dim);
   font-size: 0.95rem;
