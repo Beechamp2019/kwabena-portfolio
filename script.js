@@ -86,7 +86,8 @@ const workSectionTitle = document.querySelector("#work .section-head h2");
 const workHeadings = {
   projects: { number: "01.", title: "PROJECTS" },
   internships: { number: "02.", title: "INTERNSHIPS" },
-  business: { number: "03.", title: "BUSINESS CASES" }
+  business: { number: "03.", title: "BUSINESS CASES" },
+  opinions: { number: "04.", title: "OPINION PIECES" }
 };
 let tabIndicator;
 
