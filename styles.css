@@ -500,7 +500,7 @@ a { color: inherit; }
 
 /* OPINION PIECES */
 .opinion-card {
-  min-height: 390px;
+  min-height: 330px;
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
   overflow: hidden;
@@ -513,7 +513,7 @@ a { color: inherit; }
 }
 .opinion-card:hover { transform: translateY(-3px); border-color: #4b4842; }
 .opinion-card-visual {
-  padding: clamp(30px, 5vw, 54px);
+  padding: clamp(28px, 4vw, 44px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -531,7 +531,7 @@ a { color: inherit; }
 }
 .opinion-card-visual strong {
   font-family: var(--font-display);
-  font-size: clamp(4.4rem, 9vw, 7.8rem);
+  font-size: clamp(4rem, 7.5vw, 6.5rem);
   line-height: 0.82;
   letter-spacing: -0.08em;
 }
@@ -546,7 +546,7 @@ a { color: inherit; }
 .opinion-card-bar-education { width: 23%; background: #f0592a; }
 .opinion-card-bar-infrastructure { width: 100%; background: #191816; }
 .opinion-card-copy {
-  padding: clamp(32px, 5vw, 58px);
+  padding: clamp(30px, 4vw, 46px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -556,7 +556,7 @@ a { color: inherit; }
   margin: 0;
   color: var(--text);
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4.2vw, 3.7rem);
+  font-size: clamp(1.85rem, 3.5vw, 3.15rem);
   line-height: 1.03;
   letter-spacing: -0.045em;
 }
@@ -1087,7 +1087,7 @@ a { color: inherit; }
   .business-case-card { min-height: 0; grid-template-columns: 1fr; }
   .business-case-visual { min-height: 210px; }
   .opinion-card { grid-template-columns: 1fr; }
-  .opinion-card-visual { min-height: 360px; }
+  .opinion-card-visual { min-height: 300px; }
   .contact-box { padding: 36px 24px; }
   .section-cta { margin-left: 0; }
   .internship-copy { padding: 24px; }
