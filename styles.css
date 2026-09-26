@@ -503,6 +503,11 @@ a { color: inherit; }
   grid-template-columns: minmax(300px, 0.78fr) minmax(420px, 1.22fr);
   gap: 16px;
 }
+.ebid-internship-card .internship-role,
+.ebid-internship-card .entry-kicker,
+.ebid-internship-card .ebid-report-head a {
+  color: #42c77a;
+}
 .ebid-gallery {
   padding: 0;
   grid-template-columns: 1fr;
