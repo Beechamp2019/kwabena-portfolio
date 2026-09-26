@@ -497,6 +497,61 @@ a { color: inherit; }
   transform: scale(1.035);
   filter: saturate(1.06) contrast(1.02);
 }
+.ebid-showcase {
+  padding: 0 16px 16px;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.78fr) minmax(420px, 1.22fr);
+  gap: 16px;
+}
+.ebid-gallery {
+  padding: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 230px 170px 170px;
+}
+.ebid-gallery .internship-photo-featured {
+  grid-row: auto;
+}
+.ebid-report {
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 7px);
+  background: #111;
+}
+.ebid-report-head {
+  min-height: 86px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.ebid-report-head .entry-kicker { margin-bottom: 5px; }
+.ebid-report-head h4 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  line-height: 1.2;
+}
+.ebid-report-head a {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+.ebid-report-head a:hover { text-decoration: underline; }
+.ebid-report iframe {
+  width: 100%;
+  min-height: 500px;
+  flex: 1;
+  border: 0;
+  background: #ece9e1;
+}
 
 /* OPINION PIECES */
 .opinion-card {
@@ -1100,6 +1155,20 @@ a { color: inherit; }
     grid-column: 1 / -1;
     grid-row: auto;
   }
+  .ebid-showcase { grid-template-columns: 1fr; }
+  .ebid-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 250px 150px;
+  }
+  .ebid-gallery .internship-photo-featured {
+    grid-column: 1 / -1;
+  }
+  .ebid-report iframe { min-height: 540px; }
+}
+
+@media (max-width: 560px) {
+  .ebid-report-head { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .ebid-report iframe { min-height: 430px; }
 }
 
 @media (min-width: 980px) {
