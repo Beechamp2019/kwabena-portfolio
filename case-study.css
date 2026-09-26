@@ -709,6 +709,61 @@
   text-transform: uppercase;
 }
 .store-badge strong { font-family: var(--font-display); font-size: 1.05rem; }
+
+.review-access-card {
+  max-width: 680px;
+  margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: minmax(170px, 0.72fr) minmax(280px, 1.28fr);
+  gap: 18px 28px;
+  align-items: center;
+  background: rgba(23, 23, 21, 0.94);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+.review-access-card > div > span {
+  display: block;
+  color: var(--case-coral);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.review-access-card p {
+  margin: 7px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+.review-access-card dl { margin: 0; display: grid; gap: 8px; }
+.review-access-card dl > div {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+}
+.review-access-card dt {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.review-access-card dd { margin: 0; min-width: 0; }
+.review-access-card code {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+  .review-access-card { grid-template-columns: 1fr; }
+}
+
 .case-next-actions { margin-top: 22px; }
 .case-next .case-button-primary { background: #fff; color: #171613; }
 .case-next .case-button-secondary { border-color: rgba(255,255,255,0.45); color: #fff; }
